@@ -1,0 +1,40 @@
+\chapter{Results and Analysis}
+\label{ch:results}
+\glsresetall
+\section{Preamble}
+
+Preamble text here.
+
+\section{Section Title}
+\label{sec:sectionTwoRef}
+
+Reference equations a little differently like \labelcref{eq:eqRefNameHere}. Or reference a table like \Cref{tab:tabRefNameHere}.
+
+\begin{table}[tb!]
+	\begin{center}
+		\caption[TOC Table Title Here]{Table Title Here}
+		\label{tab:tabRefNameHere}
+		\begin{tabular}{l|S|r} % <-- Changed to S here.
+			\textbf{Description} & \textbf{Variable} & \textbf{Value} \\
+			\hline
+			Focal lengths & $f_x$ & \num{198.44397844114553} \\
+			%			Focal length, y   
+			& $f_y$ & \num{198.82574577980597} \\
+			\hline
+			Image Center & $c_x$ & \num{104.82882039668912} \\
+			%			Image Center, y  
+			& $c_y$ & \num{92.83779928839462} \\
+			\hline
+			Radial Distortion& {$k_1$} & \num{-0.39351276662408013} \\
+			%			Radial Distortion 
+			& {$k_2$} &  \num{0.1559033641626471} \\ 
+			%			Radial Distortion 3
+			& {$k_3$} & 0  \\
+			\hline	
+			Tangential Distortion & {$p_1$} & \num{-0.12466011637578988e-3} 
+			\\
+			%			Tangential Distortion 2
+			& {$p_2$} &  \num{-1.6292737247630268e-3} \\ 
+		\end{tabular}
+	\end{center}
+\end{table}
