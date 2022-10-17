@@ -1,4 +1,4 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
 
 \bibitem{DOD_ESSS}
 R.~M. Hoffer.
@@ -7,5 +7,69 @@ R.~M. Hoffer.
 \newblock US Department of Defense
   \url{https://www.defense.gov/News/Releases/Release/Article/2397850/electromagnetic-spectrum-superiority-strategy-released/}.
 \newblock (Accessed: 30 August 2022).
+
+\bibitem{Bowen}
+E.~G. Bowen.
+\newblock {\em Radar Days}.
+\newblock Intitute of Phsyics Publishing, 1987.
+
+\bibitem{POMR_Range_eq}
+Scheer J. A. Holm W.~A. Richards, M.~A.
+\newblock {\em Noise}, pages 61--65.
+\newblock Scitech Publishing, Edison, NJ, 2010.
+
+\bibitem{N_Noise}
+H.~Nyquist.
+\newblock Thermal agitation of electric charge in conductors*.
+\newblock {\em Physical Review}, 32:110--113, 1928.
+
+\bibitem{POMR_Noise}
+Scheer J. A. Holm W.~A. Richards, M.~A.
+\newblock {\em Noise}, pages 64--66.
+\newblock Scitech Publishing, Edison, NJ, 2010.
+
+\bibitem{J_Noise}
+J.~B. Johnson.
+\newblock Thermal agitation of electricity in conductors.
+\newblock {\em Physical Review}, 32:97--109, 1928.
+
+\bibitem{SAR_Survey}
+Khalid El-Darymli, Eric~W. Gill, Peter Mcguire, Desmond Power, and Cecilia
+  Moloney.
+\newblock Automatic target recognition in synthetic aperture radar imagery: A
+  state-of-the-art review.
+\newblock {\em IEEE Access}, 4:6014--6058, 2016.
+
+\bibitem{EO_10290}
+H.~S. Truman.
+\newblock {Executive Order 10290}.
+\newblock The American Presidency Project
+  \url{https://www.presidency.ucsb.edu/node/278445}.
+\newblock (Accessed: 9 Sept 2022).
+
+\bibitem{PLA_Class}
+C.~Campbell.
+\newblock {China's Military: The People's Liberation Army}.
+\newblock Congresional Research Service
+  \url{https://crsreports.congress.gov/product/pdf/R/R46808}.
+\newblock (Accessed: 9 Sept 2022).
+
+\bibitem{Brooks}
+M.~A. Dennis.
+\newblock {Rodney Brooks}.
+\newblock Britannica
+  \url{https://www.britannica.com/biography/Rodney-Allen-Brooks}.
+\newblock (Accessed: 9 Sept 2022).
+
+\bibitem{Brooks2}
+Creiner R. Binford T.~O. Brooks, R.~A.
+\newblock International joint conference of artificial intelligence.
+\newblock In {\em Proceesings of the International Joint Conference of
+  Artificial Intelligence}, pages 105--113, New York, NY, 1979. ACM.
+
+\bibitem{Knott}
+John~Shaeffer Eugene~Knott and Michael Tuley.
+\newblock {\em Radar Cross Section}.
+\newblock Scitech Publishing, Raleigh, NC, 2004.
 
 \end{thebibliography}

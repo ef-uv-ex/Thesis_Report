@@ -3,46 +3,67 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: main.aux
 The style file: unsrt.bst
 Database file #1: myThesis/library.bib
-Warning--I didn't find a database entry for "Scaramuzza2011"
-You've used 1 entry,
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Range_eq
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Range_eq
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Range_eq
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Noise
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Noise
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Richards, M. A., Scheer, J. A., Holm, W. A." for entry POMR_Noise
+while executing---line 944 of file unsrt.bst
+Name 1 in "Dennis, M. A.," has a comma at the end for entry Brooks
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Brooks, R. A., Creiner, R., Binford, T. O." for entry Brooks2
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Brooks, R. A., Creiner, R., Binford, T. O." for entry Brooks2
+while executing---line 944 of file unsrt.bst
+Too many commas in name 1 of "Brooks, R. A., Creiner, R., Binford, T. O." for entry Brooks2
+while executing---line 944 of file unsrt.bst
+Name 1 in "Eugene Knott, John Shaeffer, and Michael Tuley" has a comma at the end for entry Knott
+while executing---line 944 of file unsrt.bst
+You've used 12 entries,
             1791 wiz_defined-function locations,
-            453 strings with 3827 characters,
-and the built_in function-call counts, 154 in all, are:
-= -- 12
-> -- 4
-< -- 0
-+ -- 2
-- -- 1
-* -- 2
-:= -- 30
-add.period$ -- 4
-call.type$ -- 1
-change.case$ -- 1
+            521 strings with 5184 characters,
+and the built_in function-call counts, 2492 in all, are:
+= -- 235
+> -- 65
+< -- 3
++ -- 29
+- -- 17
+* -- 101
+:= -- 375
+add.period$ -- 41
+call.type$ -- 12
+change.case$ -- 8
 chr.to.int$ -- 0
-cite$ -- 1
-duplicate$ -- 5
-empty$ -- 19
-format.name$ -- 1
-if$ -- 33
+cite$ -- 12
+duplicate$ -- 124
+empty$ -- 281
+format.name$ -- 17
+if$ -- 599
 int.to.chr$ -- 0
-int.to.str$ -- 1
-missing$ -- 0
-newline$ -- 9
-num.names$ -- 1
-pop$ -- 7
+int.to.str$ -- 12
+missing$ -- 12
+newline$ -- 67
+num.names$ -- 12
+pop$ -- 61
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 0
-skip$ -- 2
+skip$ -- 59
 stack$ -- 0
-substring$ -- 0
-swap$ -- 1
-text.length$ -- 0
+substring$ -- 138
+swap$ -- 35
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 0
 warning$ -- 0
-while$ -- 1
-width$ -- 2
-write$ -- 13
-(There was 1 warning)
+while$ -- 22
+width$ -- 14
+write$ -- 137
+(There were 11 error messages)

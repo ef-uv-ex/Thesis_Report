@@ -1,9 +1,27 @@
 \chapter{Methodology}
 \label{ch:methodology}
 \glsresetall
-\section{Preamble}
 
-Preamble text here.
+{
+Heres what Im going to do right now:
+
+
+1. Finish code to include:
+  a. Ingest Measured object data
+  b. Ingest sim'd object data
+  c. Polar plots for both pols at 10GHz
+    i. dashed lines to identify scattering centers
+    ii. overlay plots over image
+    iii. Overlay several rcs plots
+    iv. plots of prob values?
+  d. Frequency plots for both pols at
+    i. 3D plot for freq slices f vs A vs azimuth
+    ii. overlay sim and measurement?
+  e. Extract probability metrics
+    i. Amp, mean, var of each slice over frequency
+2.
+
+}
 
 \section{Calibration}
 
@@ -14,6 +32,14 @@ Target measurements are unknown to the observer until they have been calibration
 \end{equation}
 
 The raw and true measurements for the target and calibration cylinders are $\sigma_{t, raw}$, $\sigma_{t, true}$, $\sigma_{c, raw}$, and $\sigma_{c, true}$ respectively. The background measurements are taken of the target and calibration cylinders mounts, shown in the equation as $\sigma_{t, bg}$, $\sigma_{t, bg}$ respectively.
+
+\section{RCS Calculation}
+
+Target RCS is defined by the IEEE as shown in equation \ref{eq:ieee_rcs}\cite{Knott}.
+
+\begin{equation}\label{eq:ieee_rcs}
+    \sigma [m^2] = 4\pi \frac{|E_{r}|^2}{|E_{r}|^2}
+\end{equation}
 
 \section{Target Selection}
 \label{sec:anothersectionRefName}

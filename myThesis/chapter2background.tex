@@ -2,45 +2,111 @@
 \label{ch:background}
 \glsresetall
 {
-Chapter starting text here.}
+% Electromagnetic waves and reflection
 
-\section{Radar Detection}
+% Radar operations and equations
+
+% noise
+
+% SAR-ATR techniques and the analog to traditional radars
+Background on the \gls{SAR} \gls{ATR} communities investigations regarding sensor model training approach is provided. A taxonomy of three training styles is reviewed, and a fourth is proposed.
+
+
+
+}
+
+\section{Electromagnetic Waves}
+
+- Need to reference the Kong text her to make sure I get this right
+- The behaviour of electromagnetic waves is driven by boundary conditions. A boundary is considered a region over which material properties change. Principally, the electromagnetic propoerties of permittivity, $\epsilon$, and permiability, $\mu$.
+- Explain why these matter, and how they are related via snells law. Permitivitty, given in "PROVIDE UNITS", . Consider the interface between air and a metal sheet:  the constituant parameters of air is a boundary. EM wave energy is conservedAs an EM wave transits from one material to
+
+\section{Radar}
 \label{sec:RD}
 
-Radio Detection and Ranging (Radar) is long distance, nearly all weather means of identifying and tracking airborne platforms. Radars leverage the speed of electromagnetic (EM) waves. Traveling at the nearly the speed of light in air, an EM wave can transit 300 meters per microsecond. Radars also leverage the behavior of EM waves as they interact with their surroundings.
 
-	- Need to reference the Kong text her to make sure I get this right
-	- The behaviour of electromagnetic waves is driven by boundary conditions. A boundary is considered a region over which material properties change. Principally, the electromagnetic propoerties of permittivity, $\epsilon$, and permiability, $\mu$.
-	- Explain why these matter, and how they are related via snells law. Permitivitty, given in "PROVIDE UNITS", . Consider the interface between air and a metal sheet:  the constituant parameters of air is a boundary. EM wave energy is conservedAs an EM wave transits from one material to
+The transit speed, and reflective interaction with metallic targets make electromagnetic waves an ideal tool for long distance target detection. The first radio detection and ranging (Radar) device was patented by German inventor Christian H{\"u}lsmeyer. Serving as a means to help ships avoid collision in heavy fog, radar showed impressive all weather, long distance performance. This concept was expanded on by a British meteorologist named Robert Watson-Watt. Watt measured the electromagnetic radiation from lighting bursts using an oscilloscope to track storms. Watt's innovation was using an oscilloscope to display the signals, allowing for better fidelity than the simple H{\"u}lsmeyer detector. The British Air Ministry, sensing an impending war with Germany quickly pressed this new capability into military service. In November 1934 the Committee for the Scientific Survey of Air Defense convened, chaired by Sir Henry Tizard. Watt and his assistant Arnold 'Skip' Wilson proposed a radar system that could not only detect enemy aircraft, but could determine their range as well. The first operational pulse radar utilized a $25 \mu s$ pulse, pulse reputation interval of $25 Hz$, peak power of $1 kW$, and operating frequency of $6 MHz$. This system detected a Supermarine Scapa flying boat at a distance of 17 miles on 17 June 1935, ushering in the era of air defense radars in modern warfare \cite{Bowen}.
 
+\subsection{ The Radar Equation}
 
+Generally, radar can be calculated using equation \ref{eq:re}, the radar equation (RE) \cite{POMR_Range_eq}.
 
-\section{Radar Detection}
+\begin{equation}\label{eq:re}
+	P_{r} = \frac{P_t}{4 \pi R^2}G_t \cdot \frac{\sigma(\theta, \phi)}{4 \pi R^2} \cdot \frac{G_r \lambda^2}{4 \pi}
+\end{equation}
 
-Target information is deterined using the radar range equation:
+The RE can be broken into three terms representing the transmitter ($\frac{P_t }{4 \pi R^2}G_t$); target ($\frac{\sigma}{4 \pi R^2}$); and receiver ($\frac{G_r \lambda^2}{4 \pi}$). Transmitter power is given as $P_t$; $4 \pi$ evolves from the solution of an electromagnetic wave launched from a dipole antenna using Green's Functions(CITE KONG AND BE SURE TO SHOW THIS), with $ R^2$ representing the distance from the transmitter to the target. Together, $\frac{P_t}{4 \pi R^2}$ model the surface of an expanding sphere, over which the transmitters power is spread which is referred to as \textit{isotropic} radiation. Radar detection range is dependent on transmission power. To maximize the detection range for a fixed input power, designers concentrate transmitted power into desired patterns by leveraging antenna designs. Electromagnetic energy will be transmitted from an antenna in a directional pattern driven by the physical construction of the antenna, referred to as the \textit{directionality, D} of the antenna. The term $G_t$ in the RRE is the gain of the radar, which subtracts power loss from the amplifier to the feed port of the antenna from the directionality \cite{POMR_Range_eq}.
+
+The target term can be thought of as the "unpowered transmission" of an echo signal. The radiation surface of the echoed signal is modeled by the familiar $4 \pi R^2$, however now the transmission power and gain variables have been replaced by the targets radar cross section, $\sigma$ (RCS). A targets RCS encodes the reflectivity of the target for all incident angles $\theta$ and $\phi$. The RCS term is empirically derived and is typically derived using a combination of indoor and outdoor range measurements and electromagnetic simulation software. Target RCS will be discussed in detail in a later section.
+
+The third term models the radar's effective aperture, or the cross-sectional area of the antenna that can successfully capture incident radiation. The receivers gain is given as $G_r$, and the incident radiation's wavelength given as $\lambda$.
+
+\subsection{Signal to Noise Performance}
+
+Radars must contend with noise from several sources. Cosmic noise emanating from space is significant, but only below 1 GHz. Solar noise is largely mitigated by directional antennas, and only becomes a factor when the antenna is pointed directly at the sun. The ground produces noise similar to sun, though less intense and is also mitigated by directional antennas \cite{POMR_Range_eq}. The two primary sources of noise that radar systems must contend with are \textit{thermal} and \textit{jamming} noise. Thermal noise is created by the random fluctuations of electrical charges \cite{N_Noise}. Thermal noise is an omnipresent source with a power given by equation \ref{eq:tnoise}\cite{POMR_Noise}\cite{J_Noise}.
+
+\begin{equation}\label{eq:tnoise}
+	P_n = k_B T_S B = k_B T_0 F B
+\end{equation}
+
+Where $k_B$ is the Boltzmann Constant \footnote{$1.38\times10^{-23} W\cdot s / K$}, $T_S$ is the system temperature, $B$ is the instantaneous receiver bandwidth in Hz, $T_0$ is the standard temperature \footnote{$T_0 = 290 K$}, and $F$ is the noise figure of the receiver subsystem. System bandwidth is typically driven by the signal the radar emits, and cannot be made arbitrarily small. A radar pulse of length $\tau$ will require a bandwidth of $B = 1/\tau$ \cite{POMR_Noise}. Thermal noise is modelled as a zero-mean, gaussian process (I think the nyquist paper says this? note really sure if Im reading it right though.). Thermal noise sets the \textit{noise floor} of the radar system. Signals with a power level below the noise floor will be indistinguishable from noise. A hypothetical system with a noise figure of 1.2, and bandwidth of 1 MHz will have a noise floor of $-112.8 [dB_m]$.
+
+Typically, the RE is cast in terms of range as shown in  equation \ref{eq:rre}, the radar range equation (RRE).  \footnote{This equation assumes a mono-static system:  the radar uses a single antenna for both transmit and receive.}. The RE solves for a an expected power level, where the RRE solves for an expected target range.
 
 \begin{equation}\label{eq:rre}
-	P_{r} = \frac{P_t G_t}{4 \pi R^2} \cdot \frac{\sigma}{4 \pi R^2} \cdot \frac{G_r \lambda^2}{4 \pi}
+	SNR_0 = \frac{P_t G_t G_r \lambda^2 \sigma}{(4 \pi)^3 R^4 k_B T_0 F B}
 \end{equation}
 
-The radar range equation can  be modified to better suit the radars mode of operation. A serach radar is required to detect targets at long range. The echo responses will be significiatnly reduced due to the $1/R^4$ drop, reducing the overall received power level by 40 decibels per 10 meters (? That dosent sound right...). These miniscule signals will begin to approach the noise floor of the radar. The noise floor is the power level of random noise white gaussian noise within the radars receiver. The theoretical level of the noise floor in a radar is given by equation \ref{eq:noise_floor}, where $N$ is the noise power, $k_b$ is Boltzmanns constant \footnote{Place the value of Boltzmanns constant here.}, $B$ is the bandwidth of the radars smallest channel, and $F$ is the noise figure of the radars receive chain. Ideally $F=1$.
+The received power in equation \ref{eq:re} is divided by the thermal noise from equation \ref{tnoise} to produce a single-pulse signal to noise ratio, $SNR_0$.
 
-\begin{equation}\label{eq:noise_floor}
-	N = k_b T B F
-\end{equation}
+Modern radar designs integrate multiple radar pulses to improve the SNR of the system. Integration leverages the zero-mean nature of thermal noise:  continuously adding random zero mean noise will eventually reduce it to zero (Need a good citation for this process that isnt just POMR). The SNR improvement depends on the type of integration employed:  coherent integration (in which phase information is preserved) applies a factor of $n_p$, and a factor of $\sqrt{n_p}$ for incoherent integration.
 
-If the echo response of the target is below the noise floor, it will become irrecoverable, and the radar will not be able to track the target. To combat this, will integarte multiple received signals. White gaussian noise is zero mean -- over a sufficeiently large sample, the mean value of the noise can be reduced to 0 [cite]. Radar systems are designed to trade off the reduction of gaussian noise in the captured signals against the amount of integrations required. A system that preforms dozens of integrations will reduce the noise substantially, but at the cost of detection speed and processing power.
-% ASSUMPTION POINT:  this is a proof of concept, so I will be taking a large count of integrations
+\section{Radar Cross Section}
+
+\section{Machine Learning Models}
+
+Discuss:
+	- SVM
+	- Random Forest
+	- Neural Networks
+	- K-nearest neighbor (K-NN)
+	- What else?
+
+\section{Target Recognition}
+
+Training radars to automatically recognize targets using model data has been extensively studies by the SAR-ATR community \cite{SAR_Survey}. A 2016 study proposes three taxonomy to describe the training methods employed when developing a sensor: 1. Feature based training; 2. Semi-model based training; 3. Model based training.
+
+% Focus on feature based training
+\subsection{Feature-Based Training}
+The most common approach across SAR-ATR literature, feature based training utilizes either raw or template image-data to train a sensor. This approach assumes the features of an image are separable across classes \cite{SAR_Survey}.
+
+While deeply researched and computationally accessible, feature based training suffers from statistical classification breakdown, and pattern recognition problems \cite{SAR_Survey}. Further, the feature based approach requires preliminary training data, which could become untenable when employed for military's employment. Governments and their militaries got to great lengths to set a standard for how national secrets are classified and controlled \cite{EO_10290}\cite{PLA_Class}, making it unreasonable to expect to have access to data that has been collected on adversary materiel. Using this method to train a traditionally radar system for target recognitions would be especially challenging: a target recognition algorithm would need calibrated data captured over a targets entire angular space azimuth to create a useful training set.
+
+% Model Based training
+Model based training utilizes ESIM software to produce training data. In its simplest conception, the "model based" approach can be thought of as a data generator for a feature based training regime. That is, a system can be trained to identify features using modeled data, providing a sensor with otherwise inaccessible data.
+
+ Alternately, generated models can be processed to provide the sensor with a more "bottom-up" training approach. The "bottom-up" concept was developed and implemented by Robert A. Brooks at M.I.T. for the ACRONYMN target recognition system \cite{Brooks}\cite{Brooks2}. Simulation results are processed to produce scattering-center templates that are used to train the sensor. This method shifts the focus of training away from what the target looks in a specific limited instance, to something more representative of \textit{how} the target \textit{may} look.
+
+% Semi Model based training
+Semi-model based training borrows from both feature and model based training: the limited feature based data set is processed to produce scattering center models. This method seeks the best of both world:  robust, "behavior" based models that are built with limited, but readily available data sets. 
+
+The similarity in operation of a SAR and traditional radar make these taxonomy applicable to target identification in air defense. A feature based approach would utilize measured radar cross section data to train a sensor. A model-based approach utilizes utilize simulation results that have been calculate for a 3D model that is representative of the desired target. And a semi-model based approach would leverage measurement data to create a more robust, probabilistic model that could be used to train a sensor.
+
+Machine learning models require data. The purpose of a machine learning model is to ingest data, and produce a desirable output. For this paper, that output is a classification. Classification models are typically built using a supervised training process, wherein an ML model is trained to make a classification using labeled data. Labeled data is a data set where the input data is explicitly tethered to a unique classification label.
 
 
-	\begin{figure}[tb!] % "tb!" puts it at top, if possible, then at bottom. the "!" tries harder to put it where you place it. Make every effort to have Figures at/after the first reference and within 1 page distance of the first reference, if possible.
-		\centering
-		\includegraphics[width = 0.75\columnwidth]{Figures/checkerboard7x6x50x50cm.png}
-		\caption[TOC Figure Name]{Title shown in text here: short paragraph description of picture here}
-		\label{fig:examplePicture}
-	\end{figure}
 
-	Text description here, can reference other Chapters or Sections, like \Cref{ch:introduction} or \Cref{fig:examplePicture}.
+
+
+
+\begin{figure}[tb!]
+	\centering
+	\includegraphics[width = 0.75\columnwidth]{Figures/checkerboard7x6x50x50cm.png}
+	\caption[TOC Figure Name]{Title shown in text here: short paragraph description of picture here}
+	\label{fig:examplePicture}
+\end{figure}
+
+Text description here, can reference other Chapters or Sections, like \Cref{ch:introduction} or \Cref{fig:examplePicture}.
 
 \section{Radar Cross Section}
 \label{sec:RCS}
