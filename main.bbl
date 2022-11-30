@@ -8,23 +8,23 @@ R.~M. Hoffer.
   \url{https://www.defense.gov/News/Releases/Release/Article/2397850/electromagnetic-spectrum-superiority-strategy-released/}.
 \newblock (Accessed: 30 August 2022).
 
+\bibitem{KONG}
+Jin~Au Kong.
+\newblock {\em Electromagnetic Wave Theory}.
+\newblock EMW Publishing, 2000.
+
 \bibitem{Bowen}
 E.~G. Bowen.
 \newblock {\em Radar Days}.
 \newblock Intitute of Phsyics Publishing, 1987.
 
 \bibitem{POMR_Range_eq}
-Scheer J. A. Holm W.~A. Richards, M.~A.
+Holm W.~A. Richards M.~A., Scheer J.~A.
 \newblock {\em Noise}, pages 61--65.
 \newblock Scitech Publishing, Edison, NJ, 2010.
 
-\bibitem{N_Noise}
-H.~Nyquist.
-\newblock Thermal agitation of electric charge in conductors*.
-\newblock {\em Physical Review}, 32:110--113, 1928.
-
 \bibitem{POMR_Noise}
-Scheer J. A. Holm W.~A. Richards, M.~A.
+Holm W.~A. Richards M.~A., Scheer J.~A.
 \newblock {\em Noise}, pages 64--66.
 \newblock Scitech Publishing, Edison, NJ, 2010.
 
@@ -32,6 +32,57 @@ Scheer J. A. Holm W.~A. Richards, M.~A.
 J.~B. Johnson.
 \newblock Thermal agitation of electricity in conductors.
 \newblock {\em Physical Review}, 32:97--109, 1928.
+
+\bibitem{N_Noise}
+H.~Nyquist.
+\newblock Thermal agitation of electric charge in conductors*.
+\newblock {\em Physical Review}, 32:110--113, 1928.
+
+\bibitem{Knott}
+Eugene Knott.
+\newblock {\em Radar Cross Section}.
+\newblock Scitech Publishing, Raleigh, NC, 2004.
+
+\bibitem{Chollet}
+Francois Chollet.
+\newblock {\em Deep Learning with Python}.
+\newblock Manning Publications, 2018.
+
+\bibitem{ML_Radar_Survey}
+Ping Lang, Xiongjun Fu, Jian Dong, Rui Qin, Xiapeng Meng, and Min Xie.
+\newblock A comprehensive survey of machine learning applied to radar signal
+  processing.
+\newblock {\em IEEE Access}, 10(10), 2020.
+
+\bibitem{ML_RCS}
+Eric Wengrowski, Matthew Purri, Kristin Dana, and Andrew Huston.
+\newblock Deep convolutional neural networks as a method to classify rotating
+  objects based on monostatic radar cross section, 2018.
+
+\bibitem{CNN_Survey}
+Zewen Li, Wenjie Yang, Shouheng Peng, and Fan Liu.
+\newblock A sruvey of convolutional neural networks: Analysis, applications,
+  and prospects.
+\newblock {\em arXiv}, 2020.
+
+\bibitem{ANN}
+W.~McCulloch and W.~Pitts.
+\newblock A logical calculus of ideas immanent in nervous activity.
+\newblock {\em Bulletin of Mathematical Physics}, 1943.
+
+\bibitem{Aurelien}
+Aurelien.
+\newblock {\em Hands on Machine Learning with Scikit-Learn, Kears and
+  TensorFlow}.
+\newblock O'Reilly Media, 2019.
+
+\bibitem{BP}
+R.~J.~Williams D.~E.~Rumelhart, G. E.~Hinton.
+\newblock Learning internal representation by error propogation, 1986.
+
+\bibitem{VGG-19}
+{\em Proc.\ International Conference on Learning Represenations 2015}. arXiv,
+  2015.
 
 \bibitem{SAR_Survey}
 Khalid El-Darymli, Eric~W. Gill, Peter Mcguire, Desmond Power, and Cecilia
@@ -42,34 +93,29 @@ Khalid El-Darymli, Eric~W. Gill, Peter Mcguire, Desmond Power, and Cecilia
 
 \bibitem{EO_10290}
 H.~S. Truman.
-\newblock {Executive Order 10290}.
+\newblock Executive order 10290.
 \newblock The American Presidency Project
   \url{https://www.presidency.ucsb.edu/node/278445}.
 \newblock (Accessed: 9 Sept 2022).
 
 \bibitem{PLA_Class}
 C.~Campbell.
-\newblock {China's Military: The People's Liberation Army}.
+\newblock China's military: The people's liberation army.
 \newblock Congresional Research Service
   \url{https://crsreports.congress.gov/product/pdf/R/R46808}.
 \newblock (Accessed: 9 Sept 2022).
 
 \bibitem{Brooks}
 M.~A. Dennis.
-\newblock {Rodney Brooks}.
+\newblock Rodney brooks.
 \newblock Britannica
   \url{https://www.britannica.com/biography/Rodney-Allen-Brooks}.
 \newblock (Accessed: 9 Sept 2022).
 
 \bibitem{Brooks2}
-Creiner R. Binford T.~O. Brooks, R.~A.
+Binford T.~O. Brooks R.~A., Creiner~R.
 \newblock International joint conference of artificial intelligence.
 \newblock In {\em Proceesings of the International Joint Conference of
   Artificial Intelligence}, pages 105--113, New York, NY, 1979. ACM.
-
-\bibitem{Knott}
-John~Shaeffer Eugene~Knott and Michael Tuley.
-\newblock {\em Radar Cross Section}.
-\newblock Scitech Publishing, Raleigh, NC, 2004.
 
 \end{thebibliography}

@@ -2,51 +2,68 @@
 \addvspace {10\p@ }
 \contentsline {chapter}{List of Figures}{vii}{chapter*.4}%
 \addvspace {10\p@ }
-\contentsline {chapter}{List of Tables}{viii}{chapter*.5}%
+\contentsline {chapter}{List of Tables}{ix}{chapter*.5}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {chapter}{\numberline {I.}Introduction}{1}{chapter.1}%
 \addvspace {10\p@ }
 \contentsline {section}{\numberline {1.1}Problem Background}{1}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Subsection Title Here}{1}{subsection.1.1.1}%
-\contentsline {section}{\numberline {1.2}Research Objectives}{1}{section.1.2}%
-\contentsline {section}{\numberline {1.3}Document Overview}{1}{section.1.3}%
+\contentsline {section}{\numberline {1.2}Research Objectives}{3}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Document Overview}{3}{section.1.3}%
 \addvspace {10\p@ }
-\contentsline {chapter}{\numberline {II.}Background and Literature Review}{2}{chapter.2}%
+\contentsline {chapter}{\numberline {II.}Background and Literature Review}{4}{chapter.2}%
 \addvspace {10\p@ }
-\contentsline {section}{\numberline {2.1}Electromagnetic Waves}{2}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Radar}{2}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1} The Radar Equation}{3}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Signal to Noise Performance}{4}{subsection.2.2.2}%
-\contentsline {section}{\numberline {2.3}Radar Cross Section}{6}{section.2.3}%
-\contentsline {section}{\numberline {2.4}Machine Learning Models}{6}{section.2.4}%
-\contentsline {section}{\numberline {2.5}Target Recognition}{6}{section.2.5}%
-\contentsline {subsection}{\numberline {2.5.1}Feature-Based Training}{6}{subsection.2.5.1}%
-\contentsline {section}{\numberline {2.6}Radar Cross Section}{9}{section.2.6}%
-\contentsline {subsection}{\numberline {2.6.1}Optional TOC Subsection Title Here}{9}{subsection.2.6.1}%
+\contentsline {section}{\numberline {2.1}Overview}{4}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Simulation and Measurement Data}{5}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Electromagnetic Wave Interaction}{5}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Radar}{7}{subsection.2.2.2}%
+\contentsline {section}{\numberline {2.3}Signal to Noise Performance}{8}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Radar Cross Section}{10}{section.2.4}%
+\contentsline {section}{\numberline {2.5}Machine Learning Models}{13}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1} Deep Learning}{14}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Convolutional Neural Networks}{16}{subsection.2.5.2}%
+\contentsline {subsubsection}{\numberline {2.5.2.1}VGG-19}{17}{subsubsection.2.5.2.1}%
+\contentsline {subsubsection}{\numberline {2.5.2.2}ResNET}{18}{subsubsection.2.5.2.2}%
+\contentsline {section}{\numberline {2.6}Optimizers and Augmentation}{20}{section.2.6}%
+\contentsline {section}{\numberline {2.7}Training}{20}{section.2.7}%
+\contentsline {subsection}{\numberline {2.7.1}Feature-Based Training}{21}{subsection.2.7.1}%
+\contentsline {subsection}{\numberline {2.7.2}Semi-Model Based Training}{21}{subsection.2.7.2}%
+\contentsline {subsection}{\numberline {2.7.3}Model-Based Training}{22}{subsection.2.7.3}%
 \addvspace {10\p@ }
-\contentsline {chapter}{\numberline {III.}Methodology}{10}{chapter.3}%
+\contentsline {chapter}{\numberline {III.}Methodology}{23}{chapter.3}%
 \addvspace {10\p@ }
-\contentsline {section}{\numberline {3.1}Calibration}{10}{section.3.1}%
-\contentsline {section}{\numberline {3.2}RCS Calculation}{11}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Target Selection}{11}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}Prolate Spheroid}{12}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}Oblate Spheroid}{12}{subsection.3.3.2}%
-\contentsline {subsection}{\numberline {3.3.3}Missile}{12}{subsection.3.3.3}%
+\contentsline {section}{\numberline {3.1}Targets}{23}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Measurement}{23}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Calibration}{25}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Measurement Results}{27}{subsection.3.2.2}%
+\contentsline {section}{\numberline {3.3}Simulation}{27}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Simulation Results}{28}{subsection.3.3.1}%
+\contentsline {section}{\numberline {3.4}Data Processing}{28}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Data Set Generation}{28}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Data Augmentation}{29}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Comparison}{30}{subsection.3.4.3}%
+\contentsline {section}{\numberline {3.5}Neural Network Development}{30}{section.3.5}%
+\contentsline {section}{\numberline {3.6}RCS Calculation}{30}{section.3.6}%
 \addvspace {10\p@ }
-\contentsline {chapter}{\numberline {IV.}Results and Analysis}{14}{chapter.4}%
+\contentsline {chapter}{\numberline {IV.}Results and Analysis}{31}{chapter.4}%
 \addvspace {10\p@ }
-\contentsline {section}{\numberline {4.1}Preamble}{14}{section.4.1}%
-\contentsline {section}{\numberline {4.2}Section Title}{14}{section.4.2}%
+\contentsline {section}{\numberline {4.1}Preamble}{31}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Section Title}{31}{section.4.2}%
 \addvspace {10\p@ }
-\contentsline {chapter}{\numberline {V.}Conclusions}{15}{chapter.5}%
+\contentsline {chapter}{\numberline {V.}Conclusions}{32}{chapter.5}%
 \addvspace {10\p@ }
-\contentsline {section}{\numberline {5.1}Future Work}{15}{section.5.1}%
+\contentsline {section}{\numberline {5.1}Future Work}{32}{section.5.1}%
 \addvspace {10\p@ }
-\contentsline {appendix}{\numberline {Appendix A.}Additional Results}{16}{chapter.A1}%
+\contentsline {appendix}{\numberline {Appendix A.}Model Measurements}{33}{chapter.A1}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {appendix}{\numberline {Appendix B.}Second Appendix Title}{17}{chapter.A2}%
+\contentsline {appendix}{\numberline {Appendix B.}Models}{35}{chapter.A2}%
 \addvspace {10\p@ }
-\contentsline {chapter}{Bibliography}{18}{chapter*.19}%
-\contentsline {chapter}{Acronyms}{20}{section*.21}%
+\addvspace {10\p@ }
+\contentsline {appendix}{\numberline {Appendix C.}Measurement Results}{38}{chapter.A3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {appendix}{\numberline {Appendix D.}Simulation Results}{43}{chapter.A4}%
+\addvspace {10\p@ }
+\contentsline {chapter}{Bibliography}{46}{chapter*.46}%
+\contentsline {chapter}{Acronyms}{49}{section*.48}%

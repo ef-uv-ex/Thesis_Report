@@ -1,163 +1,313 @@
-\chapter{Background and Literature Review}
+measuring\chapter{Background and Literature Review}
 \label{ch:background}
 \glsresetall
-{
-% Electromagnetic waves and reflection
 
-% Radar operations and equations
+\section{Overview}
 
-% noise
+An overview of the this project is presented in figure \ref{fig:overview}. Data is collected from open air measurement, and simulation. Collected data is modified using additive-white-gaussian-noise (AWGN) to create both training and test datasets. Datasets are augmented, and passed to a machine learning model that will classify the targets as one of five potential targets. Training data will be used to determine optimal model parameters, and test data will be used to quantify accuracy. This conception: simulation data for training, measured data for evaluation is referred to as a `model based approach'. The primary performance measurements will be a confusion matrix, as well as a correlation matrix. The confusion matrix documents the models predictions, and whether they are correct or incorrect. The cross correlation matrix documents the `similarity' between the targets RCS measurements, and will be the primary tool for understanding success or failure in classification accuracy.
 
-% SAR-ATR techniques and the analog to traditional radars
-Background on the \gls{SAR} \gls{ATR} communities investigations regarding sensor model training approach is provided. A taxonomy of three training styles is reviewed, and a fourth is proposed.
+\begin{figure}[htbp]
+	\centering
+	 \includegraphics[width=.8\linewidth]{flow_chart.png}
+	\caption[Project Overview]{Project overview flow chart.}
+	\label{fig:overview}
+\end{figure}
 
+\section{Simulation and Measurement Data}
 
+The simulation and measurement data used for project is captured/simulated using the reaction of metallic targets in the presence of electromagnetic fields. These fields are typically launched from a radar system, whose high transmission power and sensitive receiver allow the system to identify potential targets at long range. A radars theoretical performance can be quantified using the radar range equation, which incorporates the radars transmission power, sensitivity, as well as the target radar cross section. The omnipresence of noise degrades a radar's ability to detect targets. The radar's Signal to Noise (SNR) performance is a figure of merit that documents a radars capabilities in the presence of natural, or adversarial noise. The following sections will detail the phenomena listed above, as well as document how they will be employed throughout this project.
 
-}
+	\subsection{Electromagnetic Wave Interaction}
+	\label{sec:EM}
 
-\section{Electromagnetic Waves}
+		Electromagnetic radiation EMR as used by wireless systems is produced by the time-varying motion of charge. The mathematical model for EMR arises from solutions to Ampere's law with Maxwell's addition
 
-- Need to reference the Kong text her to make sure I get this right
-- The behaviour of electromagnetic waves is driven by boundary conditions. A boundary is considered a region over which material properties change. Principally, the electromagnetic propoerties of permittivity, $\epsilon$, and permiability, $\mu$.
-- Explain why these matter, and how they are related via snells law. Permitivitty, given in "PROVIDE UNITS", . Consider the interface between air and a metal sheet:  the constituant parameters of air is a boundary. EM wave energy is conservedAs an EM wave transits from one material to
+		\begin{align}
+			\nabla \times \vec{B} &= \frac{\partial}{\partial t} \mu \epsilon \vec{E} + \mu \vec{J} \label{eq:AMP}.
+		\end{align}
 
-\section{Radar}
-\label{sec:RD}
+		Here, $\vec{B}$ and $\vec{E}$ are the magnetic flux density and Electric Field strength respectively. The term $\vec{J}$ represent source current, and is equal to zero in free space. The \textit{intrinsic properties} $\mu$ and $\epsilon$ represent the magnetic permeability and electrical permeance of the material the fields are interacting with. These are the \textit{constitutive relations} that link the interaction of a field with the physical world \cite{KONG}.
 
+		Ampere's law is a second order differential equation. When source current is equal to zero, it can be rearranged to take the form of the Helmholtz wave equation:
 
-The transit speed, and reflective interaction with metallic targets make electromagnetic waves an ideal tool for long distance target detection. The first radio detection and ranging (Radar) device was patented by German inventor Christian H{\"u}lsmeyer. Serving as a means to help ships avoid collision in heavy fog, radar showed impressive all weather, long distance performance. This concept was expanded on by a British meteorologist named Robert Watson-Watt. Watt measured the electromagnetic radiation from lighting bursts using an oscilloscope to track storms. Watt's innovation was using an oscilloscope to display the signals, allowing for better fidelity than the simple H{\"u}lsmeyer detector. The British Air Ministry, sensing an impending war with Germany quickly pressed this new capability into military service. In November 1934 the Committee for the Scientific Survey of Air Defense convened, chaired by Sir Henry Tizard. Watt and his assistant Arnold 'Skip' Wilson proposed a radar system that could not only detect enemy aircraft, but could determine their range as well. The first operational pulse radar utilized a $25 \mu s$ pulse, pulse reputation interval of $25 Hz$, peak power of $1 kW$, and operating frequency of $6 MHz$. This system detected a Supermarine Scapa flying boat at a distance of 17 miles on 17 June 1935, ushering in the era of air defense radars in modern warfare \cite{Bowen}.
+		\begin{align}
+			\nabla^2 \vec E - \mu \epsilon \vec{E} = 0 \label{eq:helm_wave}.
+		\end{align}
 
-\subsection{ The Radar Equation}
+		Solutions to the Helmholtz wave equation that satisfy Maxwell's laws are electromagnetic waves \cite{KONG}. Assuming an EM wave polarized in the x-axis and propogating in the z-axis, a solution would take the form:
 
-Generally, radar can be calculated using equation \ref{eq:re}, the radar equation (RE) \cite{POMR_Range_eq}.
+		\begin{align}\label{eq:wave_sol}
+			\nabla^2 \vec E   = \mu \epsilon \vec{E} \notag\\
+			\vec{E} = \hat{x}E_0\cdot \cos(kz - \omega t).
+		\end{align}
 
-\begin{equation}\label{eq:re}
-	P_{r} = \frac{P_t}{4 \pi R^2}G_t \cdot \frac{\sigma(\theta, \phi)}{4 \pi R^2} \cdot \frac{G_r \lambda^2}{4 \pi}
-\end{equation}
+		The resulting wave prorogates in the $z$ direction, and is polarized in the $\hat{x}$ axis. The term $k$ is the dispersion relation $\omega\sqrt{\mu_0 \epsilon_0}$, and $\omega$ is the frequency of oscillation for the time-varying signal displacement current.
 
-The RE can be broken into three terms representing the transmitter ($\frac{P_t }{4 \pi R^2}G_t$); target ($\frac{\sigma}{4 \pi R^2}$); and receiver ($\frac{G_r \lambda^2}{4 \pi}$). Transmitter power is given as $P_t$; $4 \pi$ evolves from the solution of an electromagnetic wave launched from a dipole antenna using Green's Functions(CITE KONG AND BE SURE TO SHOW THIS), with $ R^2$ representing the distance from the transmitter to the target. Together, $\frac{P_t}{4 \pi R^2}$ model the surface of an expanding sphere, over which the transmitters power is spread which is referred to as \textit{isotropic} radiation. Radar detection range is dependent on transmission power. To maximize the detection range for a fixed input power, designers concentrate transmitted power into desired patterns by leveraging antenna designs. Electromagnetic energy will be transmitted from an antenna in a directional pattern driven by the physical construction of the antenna, referred to as the \textit{directionality, D} of the antenna. The term $G_t$ in the RRE is the gain of the radar, which subtracts power loss from the amplifier to the feed port of the antenna from the directionality \cite{POMR_Range_eq}.
+		The solution provided by equation \ref{eq:wave_sol} is useful for analyzing a waves interaction with material in free space. This wave will propagate in free space, and interact with any material whose intrinsic properties differ from the wave. These regions are called \textit{boundaries}, and demarcate a change in the intrinsic properties of the medium as seen by the wave. This paper will focus on the interaction of a wave in air as it meets a perfect electrical conductor (PEC). A PEC is any material whose intrinsic properties make it appear to be a perfect conductor. The energy of the propagating wave, incident on a PEC wave will be completely converted to a surface current. This surface current produces a reflection of the incident wave \cite{KONG}. The reflection produced by the boundary in the presence of incident EMR is what allows radars to operate. Assuming the reflections are sufficiently powerful, a detector can capture them and infer information about the target.
 
-The target term can be thought of as the "unpowered transmission" of an echo signal. The radiation surface of the echoed signal is modeled by the familiar $4 \pi R^2$, however now the transmission power and gain variables have been replaced by the targets radar cross section, $\sigma$ (RCS). A targets RCS encodes the reflectivity of the target for all incident angles $\theta$ and $\phi$. The RCS term is empirically derived and is typically derived using a combination of indoor and outdoor range measurements and electromagnetic simulation software. Target RCS will be discussed in detail in a later section.
+	\subsection{Radar}
+		\label{sec:RD}
+	 	The first radio detection and ranging (Radar) device was patented by German inventor Christian H{\"u}lsmeyer. Serving as a means to help ships avoid collision in heavy fog, radar showed impressive all weather long distance performance. This initial concept was expanded on by a British meteorologist named Robert Watson-Watt. Watt measured the EMR from lighting bursts using an oscilloscope as a means to track storms. Watt's innovation was using an oscilloscope to display the signals, which improved received signal fidelity compared to the H{\"u}lsmeyer detector. The British Air Ministry, sensing an impending war with Germany quickly pressed to militarize Watt's invention. In November 1934 the Committee for the Scientific Survey of Air Defense convened. Watt and his assistant Arnold `Skip' Wilson proposed a radar system that could not only detect enemy aircraft, but could determine their range as well. The first operational pulse radar detected a Supermarine Scapa flying boat at a distance of 17 miles on 17 June 1935, ushering in the era of air defense radars in modern warfare \cite{Bowen}.
 
-The third term models the radar's effective aperture, or the cross-sectional area of the antenna that can successfully capture incident radiation. The receivers gain is given as $G_r$, and the incident radiation's wavelength given as $\lambda$.
+		Radar performance is commonly quantified using the radar range equation (RRE). The RRE is an extension of the radiation field solution using a far-field approximation \cite{KONG}, given by
 
-\subsection{Signal to Noise Performance}
+		\begin{equation}\label{eq:re}
+			P_{r} = \frac{P_t}{4 \pi R_{r, t}^2}G_t \cdot \frac{\sigma(\theta, \phi)}{4 \pi R_{t, r}^2} \cdot \frac{G_r \lambda^2}{4 \pi}
+		\end{equation}
 
-Radars must contend with noise from several sources. Cosmic noise emanating from space is significant, but only below 1 GHz. Solar noise is largely mitigated by directional antennas, and only becomes a factor when the antenna is pointed directly at the sun. The ground produces noise similar to sun, though less intense and is also mitigated by directional antennas \cite{POMR_Range_eq}. The two primary sources of noise that radar systems must contend with are \textit{thermal} and \textit{jamming} noise. Thermal noise is created by the random fluctuations of electrical charges \cite{N_Noise}. Thermal noise is an omnipresent source with a power given by equation \ref{eq:tnoise}\cite{POMR_Noise}\cite{J_Noise}.
+		where  ($\frac{P_t }{4 \pi R_{r, t}^2}G_t$) represents the transmitted signal power density attenuated over distance $R_{r, t}$ from the radar to the target; ($\frac{\sigma}{4 \pi R^2}$) represents target interaction, echo emission, and echo attenuation over distance $R_{t, r}$; and ($\frac{G_r \lambda^2}{4 \pi}$) models receiver gain and sensitivity. \cite{POMR_Range_eq}.
 
-\begin{equation}\label{eq:tnoise}
-	P_n = k_B T_S B = k_B T_0 F B
-\end{equation}
+		The terms $P_t$ and $P_r$ represent the transmitted power of the initial signal, and the received echo signal respectively. The gain terms $G_t$ and $G_r$ represent the directionality of the transmit and receive antennas respectively, and are equivalent for a mono-static radar configuration. A mono-static radar utilizes a single antenna to both transmit and receive signals.
 
-Where $k_B$ is the Boltzmann Constant \footnote{$1.38\times10^{-23} W\cdot s / K$}, $T_S$ is the system temperature, $B$ is the instantaneous receiver bandwidth in Hz, $T_0$ is the standard temperature \footnote{$T_0 = 290 K$}, and $F$ is the noise figure of the receiver subsystem. System bandwidth is typically driven by the signal the radar emits, and cannot be made arbitrarily small. A radar pulse of length $\tau$ will require a bandwidth of $B = 1/\tau$ \cite{POMR_Noise}. Thermal noise is modelled as a zero-mean, gaussian process (I think the nyquist paper says this? note really sure if Im reading it right though.). Thermal noise sets the \textit{noise floor} of the radar system. Signals with a power level below the noise floor will be indistinguishable from noise. A hypothetical system with a noise figure of 1.2, and bandwidth of 1 MHz will have a noise floor of $-112.8 [dB_m]$.
+		Target interaction leverages the behavior of electromagnetic waves at boundaries as discussed in section \ref{sec:EM}. A metallic, or PEC target will re-emit an echo signal with a directional intensity given by its RCS pattern, $\sigma(\theta, \phi)$. The response of $\sigma$ is primarily driven by the physical shape of the target. A principle of low-observable design seeks to control $\sigma$ by directing scattered pulses away from the mono-static radar.
 
-Typically, the RE is cast in terms of range as shown in  equation \ref{eq:rre}, the radar range equation (RRE).  \footnote{This equation assumes a mono-static system:  the radar uses a single antenna for both transmit and receive.}. The RE solves for a an expected power level, where the RRE solves for an expected target range.
+		The receiver term shows a dependence on frequency for $\lambda = c/f$, where $c = 3\times 10^8 [m/s]$, and $f$ is the carrier frequency of the transmitted signal. This frequency dependence is driven by antenna design. Antennas have an optimal shape that is tailored to their operating frequency band. The antennas used for this experiment are within their operating bands for all frequencies. However, this frequency dependence will play an important role in equipment calibration, which will be discussed in section \ref{sec:cal}.
 
-\begin{equation}\label{eq:rre}
-	SNR_0 = \frac{P_t G_t G_r \lambda^2 \sigma}{(4 \pi)^3 R^4 k_B T_0 F B}
-\end{equation}
+\section{Signal to Noise Performance}
 
-The received power in equation \ref{eq:re} is divided by the thermal noise from equation \ref{tnoise} to produce a single-pulse signal to noise ratio, $SNR_0$.
+	A radars operational `field of view' is limited by the sensitivity of its receiver. Field of view in this context refers to the distance and azimuth over which the radar can successfully identify and prosecute targets. Sensitivity measures the minimum signal level that the radar can detect. If a signal is too faint, it will fall below the noise floor of the system  and become irrecoverable.
 
-Modern radar designs integrate multiple radar pulses to improve the SNR of the system. Integration leverages the zero-mean nature of thermal noise:  continuously adding random zero mean noise will eventually reduce it to zero (Need a good citation for this process that isnt just POMR). The SNR improvement depends on the type of integration employed:  coherent integration (in which phase information is preserved) applies a factor of $n_p$, and a factor of $\sqrt{n_p}$ for incoherent integration.
+	The noise floor defines the power level, $P_n$ below which received signals will be lost. Typically, the noise floor is driven by the thermal noise of the radars receiver. Thermal noise current accounts for the random fluctuations of moving charges in matter above 0K and can functionally defined as
+
+	\begin{equation}\label{eq:tnoise}
+		P_n = k_B T_S B = k_B T_0 F B
+	\end{equation}
+
+	Where $k_B$ is Boltzmann's constant \footnote{$1.38\times10^{-23} W\cdot s / K$}, $T_S$ is the system temperature in Kelvin, $B$ is the instantaneous receiver bandwidth in Hz, $T_0$ is the standard temperature \footnote{$T_0 = 290 K$}, and $F$ is the noise figure of the receiver subsystem. System bandwidth is typically driven by the signal the radar emits, and cannot be made arbitrarily small. A radar pulse of length $\tau$ will require a bandwidth of $B = 1/\tau$ \cite{POMR_Noise}\cite{J_Noise}\cite{N_Noise}. A hypothetical system with a noise figure of $F = 1.2$, and bandwidth $B=1$ MHz will have a noise floor of $-112.8$ [dB\_m].
+
+	Thermal noise is modelled as an additive zero-mean gaussian process. Modern radar designs seek to mitigate thermal noise via pulse integration. Adding multiple pulses together reduces noise power since the zero-mean noise tends to zero over multiple integrations. For a coherent system (one in which phase is maintained) the improvement in signal level is directly proportional to $n$, the number of pulses integrated. For a non-coherent system, the integration factor is given as $\sqrt{n}$.
+
+	The radar equation can be re-cast to include thermal noise and the integration factor using
+
+	\begin{equation}\label{eq:re_snr}
+		SNR_0 = \frac{P_t}{4 \pi R_{r, t}^2}G_t
+		\cdot \frac{\sigma(\theta, \phi)}{4 \pi R_{r, t}^2}
+		\cdot \frac{G_r \lambda^2}{4 \pi}
+		\cdot \frac{1}{k_B T_S B}
+		\cdot n_p
+	\end{equation}
+
+	where $SNR_0$ represents the signal to noise ratio of the received signal with respect to the thermal noise in the system. The minimum discernable signal (MDS) of the system is the smallest SNR for which the radar can reliably detect targets in the presence of thermal noise.
 
 \section{Radar Cross Section}
+
+	A targets Radar Cross Section (RCS) represents a ratio of scattered to incident power for a given target in the presence of an electromagnetic wave. RCS data can be presented in several ways depending on the context, and what information is most relevant. In each of the following cases, data is collected and presented for both vertically and horizontally polarized incident fields. The figures in this section will present horizontally polarized data for expedience.
+
+	An RCS `cut' is a polar plot of RCS data taken at a single measurement frequency over 360 degrees. Total RCS is presented as a contour plot with frequency and angle axes, and magnitude represented by color. The augmentation applied to the data plays an important role in data presentation:  RCS data has a large dynamic range of values. Large contributions can be highlighted or suppressed dependent on the augmentation employed. This project will use both plot formats, and several augmentation schemes throughout.
+
+	As an example of plot format, augmentation style, and the behavior of targets in incident field, consider the simulated RCS response of the target shown in figure \ref{fig:msl_target}. The total response, as well as an RCS cut augmented in $m^2$ and $\textrm{db}_m$ are shown in figures \ref{fig:msl_m2}, and \ref{fig:msl_db} respectively.
+
+	The $m^2$ format is calculated using the IEEE definition for RCS,
+
+	\begin{equation}\label{eq:ieee_rcs}
+			\sigma [m^2] = 4\pi \frac{|E_{s}|^2}{|E_{i}|^2}
+	\end{equation}
+
+	where $E_s$ and $E_i$ are the scattered and incident fields, and $r$ is the distance between the transmitting source and target \ref{eq:ieee_rcs}\cite{Knott}. This data can be re-cast in $\textrm{dB}_sm$, or decibel per square meter as follows:
+
+	\begin{equation}\label{eq:ieee_dbsm}
+			\sigma [\textrm{db}_{sm}] = 20\times \log\left( \frac{\sigma [m^2]}{1 [m^2]}\right)
+	\end{equation}
+
+	The augmentation employed highlights the RCS contribution based on the targets physical construction. In figure \ref{fig:msl_m2} data is presented in $m^2$ format. The specular flash of the cylindrical missile body dominates the return. In figure \ref{fig:msl_db}, the response of the cylindrical body is suppressed, and other RCS contributions can be observed. This project will focus on the targets nose, shown as a green wedge in the polar plots.
+
+	\begin{figure}[htbp]
+	  \centering
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{msl_top.png}
+	  \end{subfigure}%
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{msl_side.png}
+	  \end{subfigure}
+	  \caption[Target missile]{Top and side view of a missile target.}
+	  \label{fig:msl_target}
+	\end{figure}
+
+	\begin{figure}[htbp]
+	  \centering
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{MSL-1_s_m2_pp.png}
+	  \end{subfigure}%
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{MSL-1_s_m2_pp_5GHz.png}
+	  \end{subfigure}
+	  \caption[Missile RCS data sample (H-Pol)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $m^2$.}
+	  \label{fig:msl_m2}
+	\end{figure}
+
+	\begin{figure}[htbp]
+	  \centering
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{MSL-1_s_dB_pp.png}
+	  \end{subfigure}%
+	  \begin{subfigure}{.5\textwidth}
+	    \centering
+	    \includegraphics[width=.8\linewidth]{MSL-1_s_dB_pp_5GHz.png}
+	  \end{subfigure}
+	  \caption[Missile RCS data sample (V-Pol)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $\textrm{dB}_m$.}
+	  \label{fig:msl_db}
+	\end{figure}
+
+	The RCS cut of the model is used to give a quick at-a-glance view of the targets RCS deviation over angle. While this is useful on inspection, it is less useful for this project. Ideally, the sensor under examination would be able to make a classification using the data from a single angles measurement. This data would correspond to a single column of data taken from a total RCS contour plot. This single column contains 101 frequency measurements, ranging from 4.5 - 5.5 GHz. An example of frequency deviation for a single angle is shown in \ref{fig:freq_angle}. This project focuses heavily on this frequency deviation. Conceptually, the construction of each target should diverge enough to produce unique RCS responses.
+
+	\begin{figure}[htbp]
+	  \centering
+	   \includegraphics[width=.8\linewidth]{freq_angle.png}
+	  \caption[Missile RCS data, Angle Slice]{Frequency deviation over a single angle.}
+	  \label{fig:frq_ang}
+	\end{figure}
 
 \section{Machine Learning Models}
 
-Discuss:
-	- SVM
-	- Random Forest
-	- Neural Networks
-	- K-nearest neighbor (K-NN)
-	- What else?
+	Advance's in computer power, and the development of readily available software has made machine learning a common and powerful engineering tool. A machine learning model is an algorithm that is \textit{trained} rather than programmed. Training is the process of passing examples of a task or behavior to the model, and allowing it to adjust its \textit{parameters} to reach a desired outcome. The examples used to train a model include:  input data points or \textit{features}; and \textit{labels}, the expected outcomes for each set of features \cite{Chollet}.
 
-\section{Target Recognition}
+	The application of machine learning models to radar signal classification has been thoroughly studied:  Deep Learning models, Residual Networks, tree regressors, random forests, state-vector machines as well as neural and convolutional neural networks have been documented to show promising performance \cite{ML_Radar_Survey}. The remote sensing community has also employed machine learning in target identification, which will be discussed in section \ref{sec:training}.
 
-Training radars to automatically recognize targets using model data has been extensively studies by the SAR-ATR community \cite{SAR_Survey}. A 2016 study proposes three taxonomy to describe the training methods employed when developing a sensor: 1. Feature based training; 2. Semi-model based training; 3. Model based training.
+	Given the recent growth in CNN toolsets and previous success in classifying RCS frequency-series data this paper will focus on 1-Dimensional CNNs\cite{ML_RCS}. Originally developed to solve computer vision problems, CNNs are being employed with success in increasingly more problem sets to include radar signal classification, electro-cardiogram analysis, structural failure modes, and remote sensing \cite{CNN_Survey}. Two model topologies will be employed:  VGG-19, and ResNET. The first, VGG-19, is a simple, sequential, and very deep model. The second, ResNET, is a non-sequential residual network that favors `lateral' over vertical depth. Each topology will be discussed in detail in the following sections.
 
-% Focus on feature based training
-\subsection{Feature-Based Training}
-The most common approach across SAR-ATR literature, feature based training utilizes either raw or template image-data to train a sensor. This approach assumes the features of an image are separable across classes \cite{SAR_Survey}.
+	\subsection{ Deep Learning}
 
-While deeply researched and computationally accessible, feature based training suffers from statistical classification breakdown, and pattern recognition problems \cite{SAR_Survey}. Further, the feature based approach requires preliminary training data, which could become untenable when employed for military's employment. Governments and their militaries got to great lengths to set a standard for how national secrets are classified and controlled \cite{EO_10290}\cite{PLA_Class}, making it unreasonable to expect to have access to data that has been collected on adversary materiel. Using this method to train a traditionally radar system for target recognitions would be especially challenging: a target recognition algorithm would need calibrated data captured over a targets entire angular space azimuth to create a useful training set.
+		Convolutional Neural Networks are a subset of \textit{Deep Learning} models. `Deep' in this sense refers to depth-of-model as opposed to something philosophical \cite{Chollet}. The original deep leraning networks were conceived in 1943 \cite{ANN} as artificial neural networks (ANNs). These networks borrowed from the construction of the human neuronal cortex to develop a simplified computation model based on a network of connceted nodes. The nodes, or neurons of an artificial neural network are built to produce an output, for a given input. A perceptron, one of the simplest ANN architecture's is shown in figure \ref{fig:percept} as an example \cite{Aurelien}.
 
-% Model Based training
-Model based training utilizes ESIM software to produce training data. In its simplest conception, the "model based" approach can be thought of as a data generator for a feature based training regime. That is, a system can be trained to identify features using modeled data, providing a sensor with otherwise inaccessible data.
+		\begin{figure}[htbp]
+		  \centering
+		   \includegraphics[width=.8\linewidth]{perceptron.png}
+		  \caption[Perceptron node]{Perceptron model taken from `Hands on Machine Learning'\cite{Aurelien}.}
+		  \label{fig:percept}
+		\end{figure}
 
- Alternately, generated models can be processed to provide the sensor with a more "bottom-up" training approach. The "bottom-up" concept was developed and implemented by Robert A. Brooks at M.I.T. for the ACRONYMN target recognition system \cite{Brooks}\cite{Brooks2}. Simulation results are processed to produce scattering-center templates that are used to train the sensor. This method shifts the focus of training away from what the target looks in a specific limited instance, to something more representative of \textit{how} the target \textit{may} look.
+		The inputs $x_1, x_2, ... x_n$ are \textit{weighted} by $w_1, w_2, ...w_n$, summed using
 
-% Semi Model based training
-Semi-model based training borrows from both feature and model based training: the limited feature based data set is processed to produce scattering center models. This method seeks the best of both world:  robust, "behavior" based models that are built with limited, but readily available data sets. 
+		\begin{equation}
+			z = w_1 x_1 + w_2 x_2 + ... w_n x_n = x^T w
+		\end{equation}
 
-The similarity in operation of a SAR and traditional radar make these taxonomy applicable to target identification in air defense. A feature based approach would utilize measured radar cross section data to train a sensor. A model-based approach utilizes utilize simulation results that have been calculate for a 3D model that is representative of the desired target. And a semi-model based approach would leverage measurement data to create a more robust, probabilistic model that could be used to train a sensor.
+		and passed to the perceptron. If the weighted sum $z$ is larger than some threshold, it will trigger the node's \textit{activation function}. An activation function is a response function that produces an output for a given input. Here, the activation function is a Heaviside step given as
 
-Machine learning models require data. The purpose of a machine learning model is to ingest data, and produce a desirable output. For this paper, that output is a classification. Classification models are typically built using a supervised training process, wherein an ML model is trained to make a classification using labeled data. Labeled data is a data set where the input data is explicitly tethered to a unique classification label.
+		\begin{equation}\label{eq:heavy}
+			h_w(x) = \textrm{step}(x^Tw).
+		\end{equation}
+
+		This activation function will step from zero to one if its threshold is reached. Alternate activation functions are detailed in the appendix.
+		% TODO: ACtivation function details in Appendix
+
+	 	Deep learning models stack these weighted nodes into a `Dense' layer, and connected with other dense layers. The resulting series of connections and weights form the deep learning model's \textit{topology}.
+
+		The weights for each node in the model are found using the following algorithm \cite{Chollet}:
+
+		\begin{enumerate}
+			\item Feed a batch of training samples to the model.
+			\item Run the network for each sample $x$, and record the models prediction $y_{pred}$
+			\item Compute the loss between samples label $y$ and $y_{pred}$
+			\item Compute gradient of the loss with regard to the network's parameters
+			\item Update the weights of the network in a way that slightly reduces the loss for the samples in the next batch
+		\end{enumerate}
+
+		Steps 1 and 2 take input data as a \textit{batch}, or a collection of multiple input samples has the model process them and make a prediction.  The `distance' between the sample's label $y$ and the model prediction $y_{pred}$ is measured using a \textit{loss function}. Steps 1 and 2 are called the \textit{forward pass}.	The process of updating the weights is done using \textit{stochastic gradient descent, (SGD)} and the \textit{back propogation} algorithm  \cite{BP}. When utilizing the TensorFlow package, all inputs, and model objects are tensors and can be manipulated using tensor operations. The SGD algorithm takes the tensor gradient of the model's loss function to determine a minima in step 4. Step 5 in the algorithm moves the weights away from this minima \cite{Chollet}.  Ideally, adjustments in the models parameters will reduce the loss function for the next batch of inputs.
+
+		The concept of layers, weights, and the training algorithm are directly applicable to convolutional neural networks. The change from ANNs to CNNs is the structure of each `node' and the overall topology of the network.
+
+
+	\subsection{Convolutional Neural Networks}
+
+		Early neural networks were built using dense layers of nodes. The nodes of each layer connected to the nodes of other layers and interacted with varying levels of strength determined by their weights. These networks develop pattern recognition \textit{globally}. The entire input is considered when producing an output. Convolutional neural networks work to identify \textit{local} patterns \cite{Chollet}. This is done by using the process shown in figure \ref{fig:convo}.
+
+		\begin{figure}[htbp]
+			\centering
+			 \includegraphics[width=\linewidth]{CNN_basics.png}
+			\caption[CNN overview]{Convolution process:  Input Data -> Convolution -> Max Average.}
+			\label{fig:convo}
+		\end{figure}
+
+		An 8x8 array of input data is passed to the model (orange). A padding (light orange) is applied to the perimeter, and the data is sampled by a convolution window (dotted red, 3x3). The convolution window performs a convolution operation on all data elements that fit inside it, before moving to the next batch of values (solid red, 3x3). The output of the convolution operation (which employs the layer's weights) is the \textit{kernal}, and is used to reassemble the data post convolution (light blue). The convolution window is then shifted by a distance determined by the layers \textit{stride}. In this case, the stride of the layer is 2. The convolution process is repeated until the entire input space has been sampled. The resulting output (blue) is then down-sampled using a pooling process. In this case, a pooling window of size 2x2, and stride 2 pulls the maximum value in its view. This is referred to as max pooling. Alternate pooling schemes such as average, and min pooling can also be employed.
+
+		\subsubsection{VGG-19}
+
+		Developed at the University of Oxford, the VGG topology was designed to increase accuracy for image recognition tasks. Utilizing a small receptive field, simple construction, and multiple stacks of convolution layers for each pooling operation, the VGG topology exceeded the performance of earlier CNN models \cite{VGG-19}. The key feature of the VGG topology is vertical depth. The developers found the increase in model depth was directly correlated with performance, particularly with complex inputs.
+
+		This project utilizes the VGG-19 topology listed in table \ref{tab:vgg-19}. The convolution layers share a 1x3 receptive field, with a stride of 1 and `ReLu' activation functions. The max-pooling layers are 2x2 with a stride of 2. The convolutional layers terminate with a `flattening' layer. This layer prepares the convolutional data to be passed to a dense network. The a neural network features `dropout' layers. Drop out layers exclude samples within a batch, and help to prevent overfitting in the model. The final layer utilizes a `softmax' activation function. This activation calculates a probability for each label in the training data, and produces a prediction.
+
+		\begin{table}
+	    \centering
+	    \begin{tabular}{|l|l|c|c|}
+				\hline
+		    Layer & Name & Input Shape & Output Shape  \\
+				\hline
+		    0 & Input & [101, 2] & [101, 2]\\
+				1 & 1D-Conv(64) & [101,2] & [101, 64] \\
+				2 & 1D-Conv(64) & [101,64] & [101, 64] \\
+				3 & 1D-MaxPooling & [101,64] & [50, 64] \\
+				\hline
+				4 & 1D-Conv(128) & [50, 64] & [50, 128] \\
+				5 & 1D-Conv(128) & [50, 128] & [50, 128]\\
+				6 & 1D-MaxPooling & [50, 128] & [25, 128] \\
+				\hline
+				7 & 1D-Conv(256) & [25, 128] & [25, 256]\\
+				8 & 1D-Conv(256) & [25, 256] & [25, 256]\\
+				9 & 1D-Conv(256) & [25, 256] & [25, 256]\\
+				10 & 1D-Conv(256) & [25, 256] & [25, 256]\\
+				11 & 1D-MaxPooling & [25, 256] & [12, 256] \\
+				\hline
+				12 & 1D-Conv(512) & [12, 256] & [12, 512] \\
+				13 & 1D-Conv(512) & [12, 512] & [12, 512] \\
+				14 & 1D-Conv(512) & [12, 512] & [12, 512] \\
+				15 & 1D-Conv(512) & [12, 512] & [12, 512] \\
+				16 & 1D-MaxPooling & [12, 256] & [6, 256] \\
+				\hline
+				17 & 1D-Conv(512) & [6, 256] & [6, 512] \\
+				18 & 1D-Conv(512) & [6, 512] & [6, 512] \\
+				19 & 1D-Conv(512) & [6, 512] & [6, 512] \\
+				20 & 1D-Conv(512) & [6, 512] & [6, 512] \\
+				21 & 1D-MaxPooling & [6, 512] & [3, 512] \\
+				\hline
+				22 & 1D-Flatten & [3, 512] & [1, 1536] \\
+				23 & Dense(4096) & [1, 1536] & [1, 4096] \\
+				24 & Dropout(50\%) & [1, 4096] & [1, 4096] \\
+				25 & Dense(4096) & [1, 4096] & [1, 4096] \\
+				26 & Dropout(50\%) & [1, 4096] & [1, 4096] \\
+				27 & Dense(1000) & [1, 4096] & [1, 1000] \\
+				28 & Softmax(5) & [1, 1000] & [1, 5] \\
+				\hline
+			\end{tabular}
+	    \caption[VGG topology]{Model dimensions}
+	    \label{tab:vgg-19}
+	  \end{table}
+
+
+		\subsubsection{ResNET}
 
 
 
+\section{Optimizers and Augmentation}
 
+Deep learning network optimizers utilize Neural network optimizers work best when the input data is augmented \cite{ML_RCS}. The augmentation processes used for this project are documented in section \ref{sec:DA}.
 
+\section{Training}
+\label{sec:training}
 
-\begin{figure}[tb!]
-	\centering
-	\includegraphics[width = 0.75\columnwidth]{Figures/checkerboard7x6x50x50cm.png}
-	\caption[TOC Figure Name]{Title shown in text here: short paragraph description of picture here}
-	\label{fig:examplePicture}
-\end{figure}
+	Target recognition is the process of a sensor categorizing a target in its field of view given some training, or a pre-planned procedure. The remote sensing community has been experimenting with machine learning applications and their potential to increase classification accuracy for automatic target recognition with synthetic aperture radars. These ML models are pre-trained, and embedded within the radar receiver. A 2016 study documents three training regimes that have been employed to develop successful ML models:  1. Feature based training; 2. Semi-model based training; 3. Model based training \cite{SAR_Survey}.
 
-Text description here, can reference other Chapters or Sections, like \Cref{ch:introduction} or \Cref{fig:examplePicture}.
+	The similarity in operation of a SAR and traditional radar make these training regimes applicable to target identification in air defense radars. A strictly feature based approach would utilize an incomplete set of RCS measurements to train a sensor; a semi-model based approach would leverage the characteristics of a feature based test-set to create a more robust training set; and a model-based approach would attempt to create a full set of training data using model and simulation.
 
-\section{Radar Cross Section}
-\label{sec:RCS}
+	This experiment will utilize a model-based training approach. The simulated RCS response of XX targets will be used to train a machine learning algorithm, and the accuracy of the model will be tested using measurement data.
 
-An RCS encodes the expected angular response of a target in the presence of an electromagnetic wave. Radar cross sections are measured empirically, over multiple angles and frequencies.
+	% Focus on feature based training
+	\subsection{Feature-Based Training}
+		The most common approach, feature based training utilizes either raw or template image-data to train a sensor. Template data is typically a snap-shot of a target in a specific `pose'. Pose in this context refers to the targets configuration with respect to the sensors viewing angle. Features include target size, configuration, as well as the statistical properties of the received signal.  While deeply researched and computationally accessible, feature based training suffers from statistical classification breakdown and pattern recognition problems \cite{SAR_Survey}. Governments and their militaries go to great lengths to set a standard for how national secrets are classified and controlled \cite{EO_10290}\cite{PLA_Class}, restricting the amount of reliable template data available for training.
 
-\subsection[Optional TOC Subsection Title Here]{Subsection Title Here}
-\label{sec:subsectionRefNameHere}
-\phantomsection
+		Borrowing this concept for training a traditional radar:  assume a template image to be the echo response from a target at a single aspect-angle. This template will contain useful features for training a machine learning model. However, if the amount of templates for a target are limited, the model could over-train to the incomplete information and miss-classify unfamiliar pose angles.
 
-Take about an equation with text without space, like
-\begin{equation}
-\label{eq:eqRefNameHere}
-%\lambda
-\frac{1}{z}
-\begin{bmatrix}
-u \\
-v \\
-1 \\
-\end{bmatrix}=
-K \begin{bmatrix}
-x \\
-y \\
-z \\
-\end{bmatrix}=
-\begin{bmatrix}
-f_x & 0 & c_x \\
-0 & f_y & c_y \\
-0 & 0 & 1 \\
-\end{bmatrix}
-\begin{bmatrix}
-x \\
-y \\
-z \\
-\end{bmatrix}
-\end{equation}
-where $\lambda$ can be referenced. Don't put lines before or after equations, unless the equation is the end of a paragraph's discussion.
+	\subsection{Semi-Model Based Training}
+		Semi-model based training extends the concept of feature based training, while attempting to build a more complete training set given limited template data.
 
-You can also include an algorithm, like \Cref{alg:algorithmRefName}.
+		Semi-model training data seeks to extract characteristic data from the training templates:  scattering center locations, counts, and intensities are used to generalize the expected response from the target. from both feature and model based training: the limited feature based data set is processed to produce scattering center models. This method seeks the best of both world:  robust, `behavior' based models that are built with limited, but readily available data sets.
 
-\begin{algorithm}[tb!]
-	\caption{Algorithm Title Here}
-	\label{alg:algorithmRefName}
-	\begin{algorithmic}[1] % The number tells where the line numbering should start
-		\Function{foo}{$a,b,c$}
-		\State $\mathbf{R}^{C_0}_W,\mathbf{p}^W_{C_0} \gets \textsc{getPose}(e_0.t)$	\Comment{Target pose}
-		\For{$k\gets 1,N$} \Comment{Loop over events}
-		\State $\begin{bmatrix}x_H \\ y_H \end{bmatrix}  \gets \textsc{undistPos}(e_x,e_y)$ \Comment Pixel location to position
-		\label{alg:line:lineRefName} % to use to reference specific lines in Algorithm
-		\EndFor
-		\State \textbf{return} $image$\Comment{Output}
-		\EndFunction
-	\end{algorithmic}
-\end{algorithm}
+	\subsection{Model-Based Training}
+		Model based training utilizes ESIM software to produce training data. In its simplest conception, the `model based' approach can be thought of as a data generator for a feature based training regime. That is, a system can be trained to identify features using modeled data, providing a sensor with otherwise inaccessible data.
+
+		Alternately, generated models can be processed to provide the sensor with a more `bottom-up' training approach. The `bottom-up' concept was developed and implemented by Robert A. Brooks at M.I.T. for the ACRONYMN target recognition system \cite{Brooks}\cite{Brooks2}. This method shifts the focus of training away from what the target looks like in a specific, limited instance and focuses on the more general representation of \textit{how} the target \textit{may} look.

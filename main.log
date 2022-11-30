@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.10)  14 SEP 2022 13:52
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.10)  30 NOV 2022 09:14
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -800,26 +800,7 @@ Package caption Info: threeparttable package is loaded.
 \c@subfigure=\count393
 \c@subtable=\count394
 )
-(./myThesis/titlePage.tex) (./myThesis/glossary.tex
-
-./myThesis/glossary.tex:12: LaTeX Error: Missing \begin{document}.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.12 \newacronym{SAR}{SAR}Sy
-                            nthetic Aperture Radar}
-You're in trouble here.  Try typing  <return>  to proceed.
-If that doesn't work, type  X <return>  to quit.
-
-./myThesis/glossary.tex:12: Too many }'s.
-l.12 ...acronym{SAR}{SAR}Synthetic Aperture Radar}
-                                                  
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-)
+(./myThesis/titlePage.tex) (./myThesis/glossary.tex)
 Package translations Info: No language package found. I am going to use `englis
 h' as default language. on input line 15.
  (./main.aux)
@@ -934,10 +915,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 15.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
- [1
-
-{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-<figures//afitlogo.pdf, id=150, 614.295pt x 794.97pt>
+<figures//afitlogo.pdf, id=188, 614.295pt x 794.97pt>
 File: figures//afitlogo.pdf Graphic file (type pdf)
 <use figures//afitlogo.pdf>
 Package pdftex.def Info: figures//afitlogo.pdf  used on input line 18.
@@ -945,7 +923,9 @@ Package pdftex.def Info: figures//afitlogo.pdf  used on input line 18.
  [1
 
 
- <./figures//afitlogo.pdf>]
+
+{c:/texlive/2022/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./figures//afit
+logo.pdf>]
 pdfTeX warning (ext4): destination with the same identifier (name{page.i}) has 
 been already used, duplicate ignored
 <to be read again> 
@@ -975,110 +955,387 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 \tf@toc=\write5
 \openout5 = `main.toc'.
 
- [6] (./main.lof)
+ [6] (./main.lof
+[7
+
+])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
-
-[7
-
-] (./main.lot)
+ [8] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [8
+ [9
 
 ] (./myThesis/chapter1introduction.tex
 Chapter I.
-) (./myThesis/chapter2background.tex
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.1 \chapter
-            {Background and Literature Review} [1
+[1
 
 
 ]
+<figures//adm-160.png, id=376, 270.00874pt x 268.00125pt>
+File: figures//adm-160.png Graphic file (type png)
+<use figures//adm-160.png>
+Package pdftex.def Info: figures//adm-160.png  used on input line 20.
+(pdftex.def)             Requested size: 173.44865pt x 172.16223pt.
+<figures//agm-86.png, id=378, 489.83pt x 389.455pt>
+File: figures//agm-86.png Graphic file (type png)
+<use figures//agm-86.png>
+Package pdftex.def Info: figures//agm-86.png  used on input line 24.
+(pdftex.def)             Requested size: 173.44865pt x 137.9039pt.
+ [2 <./figures//adm-160.png> <./figures//agm-86.png>])
+(./myThesis/chapter2background.tex [3]
 Chapter II.
-[2
+<figures//flow_chart.png, id=392, 721.2546pt x 387.849pt>
+File: figures//flow_chart.png Graphic file (type png)
+<use figures//flow_chart.png>
+Package pdftex.def Info: figures//flow_chart.png  used on input line 11.
+(pdftex.def)             Requested size: 346.89732pt x 186.53824pt.
+[4
 
-] [3] [4]
+ <./figures//flow_chart.png>] [5] [6] [7] [8] [9] [10]
+<figures//msl_top.png, id=470, 1927.2pt x 1084.05pt>
+File: figures//msl_top.png Graphic file (type png)
+<use figures//msl_top.png>
+Package pdftex.def Info: figures//msl_top.png  used on input line 118.
+(pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
+<figures//msl_side.png, id=471, 1927.2pt x 1084.05pt>
+File: figures//msl_side.png Graphic file (type png)
+<use figures//msl_side.png>
+Package pdftex.def Info: figures//msl_side.png  used on input line 122.
+(pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
+<figures//MSL-1_s_m2_pp.png, id=472, 641.7576pt x 640.3122pt>
+File: figures//MSL-1_s_m2_pp.png Graphic file (type png)
+<use figures//MSL-1_s_m2_pp.png>
+Package pdftex.def Info: figures//MSL-1_s_m2_pp.png  used on input line 132.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-1_s_m2_pp_5GHz.png, id=473, 569.4876pt x 641.0349pt>
+File: figures//MSL-1_s_m2_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-1_s_m2_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_s_m2_pp_5GHz.png  used on input line 13
+6.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-1_s_dB_pp.png, id=474, 641.7576pt x 640.3122pt>
+File: figures//MSL-1_s_dB_pp.png Graphic file (type png)
+<use figures//MSL-1_s_dB_pp.png>
+Package pdftex.def Info: figures//MSL-1_s_dB_pp.png  used on input line 146.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-1_s_dB_pp_5GHz.png, id=475, 569.4876pt x 640.3122pt>
+File: figures//MSL-1_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-1_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_s_dB_pp_5GHz.png  used on input line 15
+0.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
 
-LaTeX Warning: Reference `tnoise' on page 5 undefined on input line 60.
 
-[5] [6] [7]
-<Figures/checkerboard7x6x50x50cm.png, id=341, 767.86874pt x 993.7125pt>
-File: Figures/checkerboard7x6x50x50cm.png Graphic file (type png)
-<use Figures/checkerboard7x6x50x50cm.png>
-Package pdftex.def Info: Figures/checkerboard7x6x50x50cm.png  used on input lin
-e 104.
-(pdftex.def)             Requested size: 325.215pt x 420.87418pt.
- [8 <./figures/checkerboard7x6x50x50cm.png>]
-Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 151.
-)
-(./myThesis/chapter3methodology.tex [9]
+LaTeX Warning: Reference `fig:freq_angle' on page 11 undefined on input line 15
+6.
+
+[11 <./figures//msl_top.png> <./figures//msl_side.png> <./figures//MSL-1_s_m2_p
+p.png> <./figures//MSL-1_s_m2_pp_5GHz.png>]
+<figures//freq_angle.png, id=488, 362.81pt x 271.56pt>
+File: figures//freq_angle.png Graphic file (type png)
+<use figures//freq_angle.png>
+Package pdftex.def Info: figures//freq_angle.png  used on input line 160.
+(pdftex.def)             Requested size: 346.89732pt x 259.66699pt.
+ [12 <./figures//MSL-1_s_dB_pp.png> <./figures//MSL-1_s_dB_pp_5GHz.png>] [13 <.
+/figures//freq_angle.png>]
+<figures//perceptron.png, id=511, 127.97812pt x 60.97781pt>
+File: figures//perceptron.png Graphic file (type png)
+<use figures//perceptron.png>
+Package pdftex.def Info: figures//perceptron.png  used on input line 179.
+(pdftex.def)             Requested size: 346.89732pt x 165.29727pt.
+ [14]
+[15 <./figures//perceptron.png>]
+<figures//CNN_basics.png, id=540, 691.383pt x 194.1654pt>
+File: figures//CNN_basics.png Graphic file (type png)
+<use figures//CNN_basics.png>
+Package pdftex.def Info: figures//CNN_basics.png  used on input line 222.
+(pdftex.def)             Requested size: 433.62001pt x 121.77673pt.
+ [16] [17 <./figures//CNN_basics.png>] [18]
+[19] [20] [21]) (./myThesis/chapter3methodology.tex [22]
 Chapter III.
-[10
 
-] [11]
-<figures//prolate_sphere_model.png, id=383, 560.0925pt x 416.30531pt>
-File: figures//prolate_sphere_model.png Graphic file (type png)
-<use figures//prolate_sphere_model.png>
-Package pdftex.def Info: figures//prolate_sphere_model.png  used on input line 
-63.
-(pdftex.def)             Requested size: 173.44865pt x 128.9199pt.
-<figures//prolate_sphere_mounted.jpg, id=384, 343.5234pt x 343.0416pt>
-File: figures//prolate_sphere_mounted.jpg Graphic file (type jpg)
-<use figures//prolate_sphere_mounted.jpg>
-Package pdftex.def Info: figures//prolate_sphere_mounted.jpg  used on input lin
-e 69.
-(pdftex.def)             Requested size: 173.44865pt x 173.20584pt.
-<figures//oblate_sphere_model.png, id=385, 574.39594pt x 389.20406pt>
-File: figures//oblate_sphere_model.png Graphic file (type png)
-<use figures//oblate_sphere_model.png>
-Package pdftex.def Info: figures//oblate_sphere_model.png  used on input line 8
-5.
-(pdftex.def)             Requested size: 173.44865pt x 117.52228pt.
-<figures//oblate_sphere_mounted.jpg, id=386, 338.2236pt x 338.2236pt>
-File: figures//oblate_sphere_mounted.jpg Graphic file (type jpg)
-<use figures//oblate_sphere_mounted.jpg>
-Package pdftex.def Info: figures//oblate_sphere_mounted.jpg  used on input line
- 91.
-(pdftex.def)             Requested size: 173.44865pt x 173.44652pt.
-) (./myThesis/chapter4results.tex [12 <./figures//prolate_sphere_model.png> <./
-figures//prolate_sphere_mounted.jpg>] [13 <./figures//oblate_sphere_model.png> 
-<./figures//oblate_sphere_mounted.jpg>]
+LaTeX Warning: Reference `nose_1_2' on page 23 undefined on input line 7.
+
+
+LaTeX Warning: Reference `nose_3_4' on page 23 undefined on input line 7.
+
+
+LaTeX Warning: Reference `nose_5' on page 23 undefined on input line 7.
+
+File: figures//msl_side.png Graphic file (type png)
+<use figures//msl_side.png>
+Package pdftex.def Info: figures//msl_side.png  used on input line 13.
+(pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
+File: figures//msl_top.png Graphic file (type png)
+<use figures//msl_top.png>
+Package pdftex.def Info: figures//msl_top.png  used on input line 17.
+(pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
+[23
+
+]
+<figures//range.png, id=598, 516.80579pt x 266.49562pt>
+File: figures//range.png Graphic file (type png)
+<use figures//range.png>
+Package pdftex.def Info: figures//range.png  used on input line 36.
+(pdftex.def)             Requested size: 173.44865pt x 89.44025pt.
+<figures//range_side.png, id=599, 449.80547pt x 268.75406pt>
+File: figures//range_side.png Graphic file (type png)
+<use figures//range_side.png>
+Package pdftex.def Info: figures//range_side.png  used on input line 40.
+(pdftex.def)             Requested size: 173.44865pt x 103.63261pt.
+ [24 <./figures//range.png> <./figures//range_side.png>] [25] [26] [27]
+[28] [29]) (./myThesis/chapter4results.tex [30]
 Chapter IV.
-) (./myThesis/chapter5conclusion.tex [14
+
+LaTeX Warning: Reference `eq:eqRefNameHere' on page 1 undefined on input line 1
+1.
+
+) (./myThesis/chapter5conclusion.tex [31
 
 ]
 Chapter V.
-) (./myThesis/appendix.tex [15
+) (./myThesis/appendix.tex [32
 
 ]
 Appendix A.
 
 Package hyperref Warning: bookmark level for unknown appendix defaults to 0.
 
-[16
+[33
 
-]
+] [34]
 Appendix B.
-) (./main.bbl [17
+<figures//nose_1.png, id=684, 295.85532pt x 474.64828pt>
+File: figures//nose_1.png Graphic file (type png)
+<use figures//nose_1.png>
+Package pdftex.def Info: figures//nose_1.png  used on input line 50.
+(pdftex.def)             Requested size: 173.44865pt x 278.27287pt.
+<figures//nose_2.png, id=685, 272.51813pt x 551.05875pt>
+File: figures//nose_2.png Graphic file (type png)
+<use figures//nose_2.png>
+Package pdftex.def Info: figures//nose_2.png  used on input line 54.
+(pdftex.def)             Requested size: 173.44865pt x 350.72562pt.
+<figures//nose_3.png, id=686, 194.22563pt x 553.69359pt>
+File: figures//nose_3.png Graphic file (type png)
+<use figures//nose_3.png>
+Package pdftex.def Info: figures//nose_3.png  used on input line 64.
+(pdftex.def)             Requested size: 173.44865pt x 494.4755pt.
+<figures//nose_4.png, id=687, 277.035pt x 335.00156pt>
+File: figures//nose_4.png Graphic file (type png)
+<use figures//nose_4.png>
+Package pdftex.def Info: figures//nose_4.png  used on input line 68.
+(pdftex.def)             Requested size: 173.44865pt x 209.73839pt.
+<figures//nose_5.png, id=688, 275.52937pt x 306.01828pt>
+File: figures//nose_5.png Graphic file (type png)
+<use figures//nose_5.png>
+Package pdftex.def Info: figures//nose_5.png  used on input line 76.
+(pdftex.def)             Requested size: 346.89732pt x 385.32356pt.
+[35
 
-]
+ <./figures//nose_1.png> <./figures//nose_2.png>] [36 <./figures//nose_3.png> <
+./figures//nose_4.png>] [37 <./figures//nose_5.png>]
+Appendix C.
+<figures//MSL-1_m_dB_tt_5GHz.png, id=706, 569.4876pt x 641.0349pt>
+File: figures//MSL-1_m_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-1_m_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_m_dB_tt_5GHz.png  used on input line 88
+.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-1_m_dB_pp_5GHz.png, id=707, 569.4876pt x 641.0349pt>
+File: figures//MSL-1_m_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-1_m_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_m_dB_pp_5GHz.png  used on input line 92
+.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-2_m_dB_tt_5GHz.png, id=708, 569.4876pt x 640.3122pt>
+File: figures//MSL-2_m_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-2_m_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-2_m_dB_tt_5GHz.png  used on input line 10
+2.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-2_m_dB_pp_5GHz.png, id=709, 569.4876pt x 641.0349pt>
+File: figures//MSL-2_m_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-2_m_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-2_m_dB_pp_5GHz.png  used on input line 10
+6.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-3_m_dB_tt_5GHz.png, id=710, 569.4876pt x 641.0349pt>
+File: figures//MSL-3_m_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-3_m_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-3_m_dB_tt_5GHz.png  used on input line 11
+6.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-3_m_dB_pp_5GHz.png, id=711, 569.4876pt x 640.3122pt>
+File: figures//MSL-3_m_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-3_m_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-3_m_dB_pp_5GHz.png  used on input line 12
+0.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-4_m_dB_tt_5GHz.png, id=712, 569.4876pt x 641.0349pt>
+File: figures//MSL-4_m_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-4_m_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-4_m_dB_tt_5GHz.png  used on input line 13
+0.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-4_m_dB_pp_5GHz.png, id=713, 569.4876pt x 640.3122pt>
+File: figures//MSL-4_m_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-4_m_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-4_m_dB_pp_5GHz.png  used on input line 13
+4.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-5_m_dB_tt_5GHz.png, id=714, 569.4876pt x 641.0349pt>
+File: figures//MSL-5_m_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-5_m_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-5_m_dB_tt_5GHz.png  used on input line 14
+4.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-5_m_dB_pp_5GHz.png, id=715, 569.4876pt x 640.3122pt>
+File: figures//MSL-5_m_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-5_m_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-5_m_dB_pp_5GHz.png  used on input line 14
+8.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-1_m_dB_tt.png, id=716, 642.4803pt x 640.3122pt>
+File: figures//MSL-1_m_dB_tt.png Graphic file (type png)
+<use figures//MSL-1_m_dB_tt.png>
+Package pdftex.def Info: figures//MSL-1_m_dB_tt.png  used on input line 158.
+(pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
+<figures//MSL-1_m_dB_pp.png, id=717, 641.7576pt x 640.3122pt>
+File: figures//MSL-1_m_dB_pp.png Graphic file (type png)
+<use figures//MSL-1_m_dB_pp.png>
+Package pdftex.def Info: figures//MSL-1_m_dB_pp.png  used on input line 162.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-2_m_dB_tt.png, id=718, 642.4803pt x 640.3122pt>
+File: figures//MSL-2_m_dB_tt.png Graphic file (type png)
+<use figures//MSL-2_m_dB_tt.png>
+Package pdftex.def Info: figures//MSL-2_m_dB_tt.png  used on input line 172.
+(pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
+<figures//MSL-2_m_dB_pp.png, id=719, 642.4803pt x 640.3122pt>
+File: figures//MSL-2_m_dB_pp.png Graphic file (type png)
+<use figures//MSL-2_m_dB_pp.png>
+Package pdftex.def Info: figures//MSL-2_m_dB_pp.png  used on input line 176.
+(pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
+<figures//MSL-3_m_dB_tt.png, id=720, 641.7576pt x 640.3122pt>
+File: figures//MSL-3_m_dB_tt.png Graphic file (type png)
+<use figures//MSL-3_m_dB_tt.png>
+Package pdftex.def Info: figures//MSL-3_m_dB_tt.png  used on input line 186.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-3_m_dB_pp.png, id=721, 642.4803pt x 640.3122pt>
+File: figures//MSL-3_m_dB_pp.png Graphic file (type png)
+<use figures//MSL-3_m_dB_pp.png>
+Package pdftex.def Info: figures//MSL-3_m_dB_pp.png  used on input line 190.
+(pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
+<figures//MSL-4_m_dB_tt.png, id=722, 641.7576pt x 640.3122pt>
+File: figures//MSL-4_m_dB_tt.png Graphic file (type png)
+<use figures//MSL-4_m_dB_tt.png>
+Package pdftex.def Info: figures//MSL-4_m_dB_tt.png  used on input line 200.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-4_m_dB_pp.png, id=723, 641.7576pt x 640.3122pt>
+File: figures//MSL-4_m_dB_pp.png Graphic file (type png)
+<use figures//MSL-4_m_dB_pp.png>
+Package pdftex.def Info: figures//MSL-4_m_dB_pp.png  used on input line 204.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-5_m_dB_tt.png, id=724, 641.7576pt x 640.3122pt>
+File: figures//MSL-5_m_dB_tt.png Graphic file (type png)
+<use figures//MSL-5_m_dB_tt.png>
+Package pdftex.def Info: figures//MSL-5_m_dB_tt.png  used on input line 214.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+<figures//MSL-5_m_dB_pp.png, id=725, 641.7576pt x 640.3122pt>
+File: figures//MSL-5_m_dB_pp.png Graphic file (type png)
+<use figures//MSL-5_m_dB_pp.png>
+Package pdftex.def Info: figures//MSL-5_m_dB_pp.png  used on input line 218.
+(pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
+[38
+
+ <./figures//MSL-1_m_dB_tt_5GHz.png> <./figures//MSL-1_m_dB_pp_5GHz.png>]
+[39 <./figures//MSL-2_m_dB_tt_5GHz.png> <./figures//MSL-2_m_dB_pp_5GHz.png> <./
+figures//MSL-3_m_dB_tt_5GHz.png> <./figures//MSL-3_m_dB_pp_5GHz.png>] [40 <./fi
+gures//MSL-4_m_dB_tt_5GHz.png> <./figures//MSL-4_m_dB_pp_5GHz.png> <./figures//
+MSL-5_m_dB_tt_5GHz.png> <./figures//MSL-5_m_dB_pp_5GHz.png>] [41 <./figures//MS
+L-1_m_dB_tt.png> <./figures//MSL-1_m_dB_pp.png> <./figures//MSL-2_m_dB_tt.png> 
+<./figures//MSL-2_m_dB_pp.png> <./figures//MSL-3_m_dB_tt.png> <./figures//MSL-3
+_m_dB_pp.png>] [42 <./figures//MSL-4_m_dB_tt.png> <./figures//MSL-4_m_dB_pp.png
+> <./figures//MSL-5_m_dB_tt.png> <./figures//MSL-5_m_dB_pp.png>]
+Appendix D.
+<figures//MSL-1_s_dB_tt_5GHz.png, id=768, 569.4876pt x 641.0349pt>
+File: figures//MSL-1_s_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-1_s_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_s_dB_tt_5GHz.png  used on input line 23
+0.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+File: figures//MSL-1_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-1_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-1_s_dB_pp_5GHz.png  used on input line 23
+4.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-2_s_dB_tt_5GHz.png, id=769, 569.4876pt x 640.3122pt>
+File: figures//MSL-2_s_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-2_s_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-2_s_dB_tt_5GHz.png  used on input line 24
+4.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+<figures//MSL-2_s_dB_pp_5GHz.png, id=770, 569.4876pt x 641.0349pt>
+File: figures//MSL-2_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-2_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-2_s_dB_pp_5GHz.png  used on input line 24
+8.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-3_s_dB_tt_5GHz.png, id=771, 569.4876pt x 641.0349pt>
+File: figures//MSL-3_s_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-3_s_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-3_s_dB_tt_5GHz.png  used on input line 25
+8.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-3_s_dB_pp_5GHz.png, id=772, 569.4876pt x 641.0349pt>
+File: figures//MSL-3_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-3_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-3_s_dB_pp_5GHz.png  used on input line 26
+2.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-4_s_dB_tt_5GHz.png, id=773, 569.4876pt x 641.0349pt>
+File: figures//MSL-4_s_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-4_s_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-4_s_dB_tt_5GHz.png  used on input line 27
+2.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-4_s_dB_pp_5GHz.png, id=774, 569.4876pt x 641.0349pt>
+File: figures//MSL-4_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-4_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-4_s_dB_pp_5GHz.png  used on input line 27
+6.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-5_s_dB_tt_5GHz.png, id=775, 569.4876pt x 641.0349pt>
+File: figures//MSL-5_s_dB_tt_5GHz.png Graphic file (type png)
+<use figures//MSL-5_s_dB_tt_5GHz.png>
+Package pdftex.def Info: figures//MSL-5_s_dB_tt_5GHz.png  used on input line 28
+6.
+(pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
+<figures//MSL-5_s_dB_pp_5GHz.png, id=776, 569.4876pt x 640.3122pt>
+File: figures//MSL-5_s_dB_pp_5GHz.png Graphic file (type png)
+<use figures//MSL-5_s_dB_pp_5GHz.png>
+Package pdftex.def Info: figures//MSL-5_s_dB_pp_5GHz.png  used on input line 29
+0.
+(pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
+) (./main.bbl [43
+
+ <./figures//MSL-1_s_dB_tt_5GHz.png>] [44 <./figures//MSL-2_s_dB_tt_5GHz.png> <
+./figures//MSL-2_s_dB_pp_5GHz.png> <./figures//MSL-3_s_dB_tt_5GHz.png> <./figur
+es//MSL-3_s_dB_pp_5GHz.png>] [45 <./figures//MSL-4_s_dB_tt_5GHz.png> <./figures
+//MSL-4_s_dB_pp_5GHz.png> <./figures//MSL-5_s_dB_tt_5GHz.png> <./figures//MSL-5
+_s_dB_pp_5GHz.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 \OT1/cmtt/m/n/12 News / Releases / Release / Article / 2397850 / electromagneti
 c -[] spectrum -[]
  []
 
-[18
+[46
 
-])
+] [47])
 Using TeX to sort glossary entries---this may take a while
-[19] [20
+[48] [49
 
 
 ] (./myThesis/SF298.tex
@@ -1109,42 +1366,41 @@ l.50 \MakeRptDocPage
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 08C028E61D2227EB30AD7E8D4820CA69;4855.
+(rerunfilecheck)             Checksum: 4CDA66ECFA51648F2178278B81C38E04;6403.
  ) 
 Here is how much of TeX's memory you used:
- 26113 strings out of 478300
- 484860 string characters out of 5849123
- 807030 words of memory out of 5000000
- 43729 multiletter control sequences out of 15000+600000
- 486691 words of font info for 90 fonts, out of 8000000 for 9000
+ 26583 strings out of 478300
+ 496225 string characters out of 5849123
+ 812970 words of memory out of 5000000
+ 44079 multiletter control sequences out of 15000+600000
+ 485488 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 96i,11n,131p,1489b,933s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 96i,11n,131p,1707b,917s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {c:/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<c:/tex
 live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2022
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmbxsl10.pfb><c:/texlive/2022/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><c:/texlive/2022/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/
-public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb
-><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texli
-ve/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive/2022/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cms
-sbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pf
-b><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb><c:/tex
-live/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2022
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/cm-supe
-r/sfrm1200.pfb>
-Output written on main.pdf (31 pages, 1071010 bytes).
+dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2022/texmf-dist/font
+s/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmmi6.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><
+c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/texlive
+/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2022/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2022/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmss8.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmssbx10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cm
+ssi10.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb
+><c:/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texl
+ive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2022/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
+/cm-super/sfrm1200.pfb>
+Output written on main.pdf (60 pages, 7739951 bytes).
 PDF statistics:
- 587 PDF objects out of 1000 (max. 8388607)
- 493 compressed objects within 5 object streams
- 118 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 972 PDF objects out of 1000 (max. 8388607)
+ 759 compressed objects within 8 object streams
+ 197 named destinations out of 1000 (max. 500000)
+ 614 words of extra memory for PDF output out of 10000 (max. 10000000)
 
