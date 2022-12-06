@@ -4,7 +4,7 @@ measuring\chapter{Background and Literature Review}
 
 \section{Overview}
 
-An overview of the this project is presented in figure \ref{fig:overview}. Data is collected from open air measurement, and simulation. Collected data is modified using additive-white-gaussian-noise (AWGN) to create both training and test datasets. Datasets are augmented, and passed to a machine learning model that will classify the targets as one of five potential targets. Training data will be used to determine optimal model parameters, and test data will be used to quantify accuracy. This conception: simulation data for training, measured data for evaluation is referred to as a `model based approach'. The primary performance measurements will be a confusion matrix, as well as a correlation matrix. The confusion matrix documents the models predictions, and whether they are correct or incorrect. The cross correlation matrix documents the `similarity' between the targets RCS measurements, and will be the primary tool for understanding success or failure in classification accuracy.
+An overview of the this project is presented in figure \ref{fig:overview}. \gls{RCS} is collected from open air measurement, and simulation. Collected data is modified using \gls{AWGN} to create both training and test datasets. Datasets are augmented, and passed to a machine learning model that will classify the targets as one of five potential targets. Training data will be used to determine optimal model parameters, and test data will be used to quantify accuracy. This conception: simulation data for training, measured data for evaluation is referred to as a `model based approach'. The primary performance measurements will be a confusion matrix, as well as a correlation matrix. The confusion matrix documents the models predictions, and whether they are correct or incorrect. The cross correlation matrix documents the `similarity' between the targets RCS measurements, and will be the primary tool for understanding success or failure in classification accuracy.
 
 \begin{figure}[htbp]
 	\centering
@@ -15,12 +15,12 @@ An overview of the this project is presented in figure \ref{fig:overview}. Data 
 
 \section{Simulation and Measurement Data}
 
-The simulation and measurement data used for project is captured/simulated using the reaction of metallic targets in the presence of electromagnetic fields. These fields are typically launched from a radar system, whose high transmission power and sensitive receiver allow the system to identify potential targets at long range. A radars theoretical performance can be quantified using the radar range equation, which incorporates the radars transmission power, sensitivity, as well as the target radar cross section. The omnipresence of noise degrades a radar's ability to detect targets. The radar's Signal to Noise (SNR) performance is a figure of merit that documents a radars capabilities in the presence of natural, or adversarial noise. The following sections will detail the phenomena listed above, as well as document how they will be employed throughout this project.
+The simulation and measurement data used for project is captured/simulated using the reaction of metallic targets in the presence of electromagnetic fields. These fields are typically launched from a radar system, whose high transmission power and sensitive receiver allow the system to identify potential targets at long range. A radars theoretical performance can be quantified using the radar range equation, which incorporates the radars transmission power, sensitivity, as well as the target radar cross section. The omnipresence of noise degrades a radar's ability to detect targets. The radar's \gls{SNR} performance is a figure of merit that documents a radars capabilities in the presence of natural, or adversarial noise. The following sections will detail the phenomena listed above, as well as document how they will be employed throughout this project.
 
 	\subsection{Electromagnetic Wave Interaction}
 	\label{sec:EM}
 
-		Electromagnetic radiation EMR as used by wireless systems is produced by the time-varying motion of charge. The mathematical model for EMR arises from solutions to Ampere's law with Maxwell's addition
+		\gls{EMR} as used by wireless systems is produced by the time-varying motion of charge. The mathematical model for EMR arises from solutions to Ampere's law with Maxwell's addition
 
 		\begin{align}
 			\nabla \times \vec{B} &= \frac{\partial}{\partial t} \mu \epsilon \vec{E} + \mu \vec{J} \label{eq:AMP}.
@@ -34,20 +34,20 @@ The simulation and measurement data used for project is captured/simulated using
 			\nabla^2 \vec E - \mu \epsilon \vec{E} = 0 \label{eq:helm_wave}.
 		\end{align}
 
-		Solutions to the Helmholtz wave equation that satisfy Maxwell's laws are electromagnetic waves \cite{KONG}. Assuming an EM wave polarized in the x-axis and propogating in the z-axis, a solution would take the form:
+		Solutions to the Helmholtz wave equation that satisfy Maxwell's laws are \gls{EM} \cite{KONG}. Assuming an EM wave polarized in the $\hat{x}$ axis and propagating in the $z$ direction, a solution would take the form:
 
 		\begin{align}\label{eq:wave_sol}
 			\nabla^2 \vec E   = \mu \epsilon \vec{E} \notag\\
 			\vec{E} = \hat{x}E_0\cdot \cos(kz - \omega t).
 		\end{align}
 
-		The resulting wave prorogates in the $z$ direction, and is polarized in the $\hat{x}$ axis. The term $k$ is the dispersion relation $\omega\sqrt{\mu_0 \epsilon_0}$, and $\omega$ is the frequency of oscillation for the time-varying signal displacement current.
+		The term $k$ is the dispersion relation $\omega\sqrt{\mu_0 \epsilon_0}$, and $\omega$ is the frequency of oscillation for the time-varying signal displacement current.
 
-		The solution provided by equation \ref{eq:wave_sol} is useful for analyzing a waves interaction with material in free space. This wave will propagate in free space, and interact with any material whose intrinsic properties differ from the wave. These regions are called \textit{boundaries}, and demarcate a change in the intrinsic properties of the medium as seen by the wave. This paper will focus on the interaction of a wave in air as it meets a perfect electrical conductor (PEC). A PEC is any material whose intrinsic properties make it appear to be a perfect conductor. The energy of the propagating wave, incident on a PEC wave will be completely converted to a surface current. This surface current produces a reflection of the incident wave \cite{KONG}. The reflection produced by the boundary in the presence of incident EMR is what allows radars to operate. Assuming the reflections are sufficiently powerful, a detector can capture them and infer information about the target.
+		The solution provided by equation \ref{eq:wave_sol} is useful for analyzing a waves interaction with material in free space. This wave will interact with any material whose intrinsic properties differ from the wave's dispersion relation. These regions are called \textit{boundaries}, and demarcate a change in the intrinsic properties of the medium as seen by the wave. This paper will focus on the interaction of a wave in air as it meets a \gls{PEC}. A PEC is any material whose intrinsic properties make it appear to be a perfect conductor. The energy of the propagating wave, incident on a PEC wave will be completely converted to a surface current. This surface current produces a reflection of the incident wave \cite{KONG}. The reflection produced by the boundary in the presence of incident EMR is what allows radars to operate. Assuming the reflections are sufficiently powerful, a detector can capture them and infer information about the target.
 
 	\subsection{Radar}
 		\label{sec:RD}
-	 	The first radio detection and ranging (Radar) device was patented by German inventor Christian H{\"u}lsmeyer. Serving as a means to help ships avoid collision in heavy fog, radar showed impressive all weather long distance performance. This initial concept was expanded on by a British meteorologist named Robert Watson-Watt. Watt measured the EMR from lighting bursts using an oscilloscope as a means to track storms. Watt's innovation was using an oscilloscope to display the signals, which improved received signal fidelity compared to the H{\"u}lsmeyer detector. The British Air Ministry, sensing an impending war with Germany quickly pressed to militarize Watt's invention. In November 1934 the Committee for the Scientific Survey of Air Defense convened. Watt and his assistant Arnold `Skip' Wilson proposed a radar system that could not only detect enemy aircraft, but could determine their range as well. The first operational pulse radar detected a Supermarine Scapa flying boat at a distance of 17 miles on 17 June 1935, ushering in the era of air defense radars in modern warfare \cite{Bowen}.
+	 	The first \gls{RADAR} device was patented by German inventor Christian H{\"u}lsmeyer. Serving as a means to help ships avoid collision in heavy fog, radar showed impressive all weather long distance performance. This initial concept was expanded on by a British meteorologist named Robert Watson-Watt. Watt measured the EMR from lighting bursts using an oscilloscope as a means to track storms. Watt's innovation was using an oscilloscope to display the signals, which improved received signal fidelity compared to the H{\"u}lsmeyer detector. The British Air Ministry, sensing an impending war with Germany quickly pressed to militarize Watt's invention. In November 1934 the Committee for the Scientific Survey of Air Defense convened. Watt and his assistant Arnold `Skip' Wilson proposed a radar system that could not only detect enemy aircraft, but could determine their range as well. The first operational pulse radar detected a Supermarine Scapa flying boat at a distance of 17 miles on 17 June 1935, ushering in the era of air defense radars in modern warfare \cite{Bowen}.
 
 		Radar performance is commonly quantified using the radar range equation (RRE). The RRE is an extension of the radiation field solution using a far-field approximation \cite{KONG}, given by
 
@@ -62,6 +62,39 @@ The simulation and measurement data used for project is captured/simulated using
 		Target interaction leverages the behavior of electromagnetic waves at boundaries as discussed in section \ref{sec:EM}. A metallic, or PEC target will re-emit an echo signal with a directional intensity given by its RCS pattern, $\sigma(\theta, \phi)$. The response of $\sigma$ is primarily driven by the physical shape of the target. A principle of low-observable design seeks to control $\sigma$ by directing scattered pulses away from the mono-static radar.
 
 		The receiver term shows a dependence on frequency for $\lambda = c/f$, where $c = 3\times 10^8 [m/s]$, and $f$ is the carrier frequency of the transmitted signal. This frequency dependence is driven by antenna design. Antennas have an optimal shape that is tailored to their operating frequency band. The antennas used for this experiment are within their operating bands for all frequencies. However, this frequency dependence will play an important role in equipment calibration, which will be discussed in section \ref{sec:cal}.
+
+		\section{Measurement Calibration}
+	    \label{sec:cal}
+	    Open air measurements must account for two distinct error sources:  range intrusion, and instrument calibration. Range intrusion accounts for spurious echo's from the floor, walls, target mount, and other physical objects in the range that interact with the incident field. These signals constitute the `background' of the scene and can be mitigated in two ways:  1. gating returns at the receiver to create quiet zones; 2. Implementing background subtraction using
+
+	    \begin{equation}
+	      E_{t, true} = E_{t, raw} - E_{t, bg}
+	    \end{equation}
+
+	    where $E_{t, raw}$ and $E_{t, bg}$ are measurements of the scene with and without the target in place. While background subtraction will help to reduce spurious signals, it cannot account for target-mount interactions and will not completely eliminate spurious returns.
+
+	    The instrument radar is calibrated using the substitution method:  a simple target whose RCS can be readily calculated is used to create a proportionality constant which accounts for deviations in radar performance \cite{Knott}. Since the range distances are fixed, the only factor of the radar range equation that will change is either the target's RCS, or fluctuation in transmitted power over frequency. By measuring a target with a known RCS, the proportionality constant $C$ can determined using
+
+	    \begin{equation}
+	      C = \frac{E_{cal, sim}}{E_{cal, raw} - E_{cal, bg}}
+	    \end{equation}
+
+	    where $E_{cal, raw}$ and $E_{cal, bg}$ are measurements of the scene with and without the calibration target respectively. The term $E_{cal, sim}$ is the RCS measurement of the calibration target. This experiment utilizes a 7 inch calibration cylinder whose RCS is modeled using CADFeko. Notably, the substitution method employs background subtraction as discussed previously.
+
+	    Prior to data processing, all target measurements are calibrated using
+
+	    \begin{equation}
+	      E_{t, true} = \frac{E_{t, raw} - E_{t, bg}}{E_{cal, raw} - E_{cal, bg}}
+	    \end{equation}
+
+		\section{Instrumentation Quiet Zone}
+			An instrumentation radar can be configured to exclude radar echoes that are outside of a desired location. This is desirable when collecting data. The receiver of the radar is \textit{gated}, or configured in a manner to only `listen` for echoes during a certain window. The windows are configured in temporal time. Due to the speed of light, these temporal time values directly correspond with a location using
+
+			\begin{equation}
+				d = \frac{c \times \Delta t}{2}
+			\end{equation}
+
+			where $d$ is a distance in meters, $c$ is the speed of light in $m/s$ and $\Delta t$ is elapsed time. This equation is divided by 2 due to the two-way path a radar pulse must travel. As an example, a preferred quiet zone that begins 5 meters from the radar, and ends  10 meters from the target would have a reception time window between $33.3$ and $66.7$ nano seconds.
 
 \section{Signal to Noise Performance}
 
@@ -89,13 +122,19 @@ The simulation and measurement data used for project is captured/simulated using
 
 	where $SNR_0$ represents the signal to noise ratio of the received signal with respect to the thermal noise in the system. The minimum discernable signal (MDS) of the system is the smallest SNR for which the radar can reliably detect targets in the presence of thermal noise.
 
+	This paper will take measure the SNR as the ratio of the absolute value of phasor RCS data and noise in \gls{dBm}. A milli-watt decibel is the measure of a signal in decibel form, referenced to 1 milli-watt:
+
+	\begin{equation}
+		dBm = 10 \times \log(\frac{P [W]}{0.001 [W]})
+	\end{equation}
+
 \section{Radar Cross Section}
 
-	A targets Radar Cross Section (RCS) represents a ratio of scattered to incident power for a given target in the presence of an electromagnetic wave. RCS data can be presented in several ways depending on the context, and what information is most relevant. In each of the following cases, data is collected and presented for both vertically and horizontally polarized incident fields. The figures in this section will present horizontally polarized data for expedience.
+	RCS is the ratio of scattered to incident power for a given target in the presence of an EM wave. RCS data can be presented in several ways depending on the context, and what information is most relevant. In each of the following cases, data is collected and presented for both vertically and horizontally polarized incident fields. The figures in this section will present horizontally polarized data for expedience.
 
-	An RCS `cut' is a polar plot of RCS data taken at a single measurement frequency over 360 degrees. Total RCS is presented as a contour plot with frequency and angle axes, and magnitude represented by color. The augmentation applied to the data plays an important role in data presentation:  RCS data has a large dynamic range of values. Large contributions can be highlighted or suppressed dependent on the augmentation employed. This project will use both plot formats, and several augmentation schemes throughout.
+	An RCS `cut' is a polar plot of RCS data taken at a single measurement frequency over 360 degrees. Total RCS is presented as a contour plot with frequency and angle axes, and magnitude represented by color. The augmentation applied to the data plays an important role in data presentation, since RCS phasor data can have a large dynamic range. Large contributions can be highlighted or suppressed dependent on the augmentation employed. This project will use both plot formats, and several augmentation schemes throughout.
 
-	As an example of plot format, augmentation style, and the behavior of targets in incident field, consider the simulated RCS response of the target shown in figure \ref{fig:msl_target}. The total response, as well as an RCS cut augmented in $m^2$ and $\textrm{db}_m$ are shown in figures \ref{fig:msl_m2}, and \ref{fig:msl_db} respectively.
+	As an example of plot format, augmentation style, and the behavior of targets in incident field, consider the simulated RCS response of the target shown in figure \ref{fig:msl_target}. The total response, as well as an RCS cut augmented in $m^2$ and $\textrm{db}_{sm}$ are shown in figures \ref{fig:msl_m2}, and \ref{fig:msl_db} respectively.
 
 	The $m^2$ format is calculated using the IEEE definition for RCS,
 
@@ -103,13 +142,13 @@ The simulation and measurement data used for project is captured/simulated using
 			\sigma [m^2] = 4\pi \frac{|E_{s}|^2}{|E_{i}|^2}
 	\end{equation}
 
-	where $E_s$ and $E_i$ are the scattered and incident fields, and $r$ is the distance between the transmitting source and target \ref{eq:ieee_rcs}\cite{Knott}. This data can be re-cast in $\textrm{dB}_sm$, or decibel per square meter as follows:
+	where $E_s$ and $E_i$ are the scattered and incident fields, and $r$ is the distance between the transmitting source and target \ref{eq:ieee_rcs}\cite{Knott}. This data can be re-cast in $\textrm{dB}_{sm}$, or decibel per square meter as follows:
 
 	\begin{equation}\label{eq:ieee_dbsm}
 			\sigma [\textrm{db}_{sm}] = 20\times \log\left( \frac{\sigma [m^2]}{1 [m^2]}\right)
 	\end{equation}
 
-	The augmentation employed highlights the RCS contribution based on the targets physical construction. In figure \ref{fig:msl_m2} data is presented in $m^2$ format. The specular flash of the cylindrical missile body dominates the return. In figure \ref{fig:msl_db}, the response of the cylindrical body is suppressed, and other RCS contributions can be observed. This project will focus on the targets nose, shown as a green wedge in the polar plots.
+	The augmentation employed highlights the RCS contribution based on the targets physical construction. In figure \ref{fig:msl_m2} data is presented in $m^2$ format. The specular flash of the cylindrical missile body dominates the return. In figure \ref{fig:msl_db}, the response of the cylindrical body is suppressed, and other RCS contributions can be observed. This project will restrict classification to a sector surrounding the targets nose. Extending $\pm 30^{\circ}$ about the target nose, the sector of interest is shown as a green wedge on the RCS cuts. On the total RCS plots, measurements outside the 60 degree sector are `dimmed.`
 
 	\begin{figure}[htbp]
 	  \centering
@@ -135,7 +174,7 @@ The simulation and measurement data used for project is captured/simulated using
 	    \centering
 	    \includegraphics[width=.8\linewidth]{MSL-1_s_m2_pp_5GHz.png}
 	  \end{subfigure}
-	  \caption[Missile RCS data sample (H-Pol)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $m^2$.}
+	  \caption[Missile RCS data sample (Cut)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $m^2$.}
 	  \label{fig:msl_m2}
 	\end{figure}
 
@@ -149,7 +188,7 @@ The simulation and measurement data used for project is captured/simulated using
 	    \centering
 	    \includegraphics[width=.8\linewidth]{MSL-1_s_dB_pp_5GHz.png}
 	  \end{subfigure}
-	  \caption[Missile RCS data sample (V-Pol)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $\textrm{dB}_m$.}
+	  \caption[Missile RCS data sample (Total)]{An RCS measurement at 5 GHz over all angles, and the total RCS measurement of a missile target in $\textrm{dB}_{sm}$.}
 	  \label{fig:msl_db}
 	\end{figure}
 
@@ -166,13 +205,13 @@ The simulation and measurement data used for project is captured/simulated using
 
 	Advance's in computer power, and the development of readily available software has made machine learning a common and powerful engineering tool. A machine learning model is an algorithm that is \textit{trained} rather than programmed. Training is the process of passing examples of a task or behavior to the model, and allowing it to adjust its \textit{parameters} to reach a desired outcome. The examples used to train a model include:  input data points or \textit{features}; and \textit{labels}, the expected outcomes for each set of features \cite{Chollet}.
 
-	The application of machine learning models to radar signal classification has been thoroughly studied:  Deep Learning models, Residual Networks, tree regressors, random forests, state-vector machines as well as neural and convolutional neural networks have been documented to show promising performance \cite{ML_Radar_Survey}. The remote sensing community has also employed machine learning in target identification, which will be discussed in section \ref{sec:training}.
+	The application of machine learning models to radar signal classification has been thoroughly studied:  Deep Learning models, \gls{RNN}, tree regressors, random forests, state-vector machines as well as neural and \gls{CNN} have been documented to show promising performance \cite{ML_Radar_Survey}. The remote sensing community has also employed machine learning in target identification, which will be discussed in section \ref{sec:training}.
 
 	Given the recent growth in CNN toolsets and previous success in classifying RCS frequency-series data this paper will focus on 1-Dimensional CNNs\cite{ML_RCS}. Originally developed to solve computer vision problems, CNNs are being employed with success in increasingly more problem sets to include radar signal classification, electro-cardiogram analysis, structural failure modes, and remote sensing \cite{CNN_Survey}. Two model topologies will be employed:  VGG-19, and ResNET. The first, VGG-19, is a simple, sequential, and very deep model. The second, ResNET, is a non-sequential residual network that favors `lateral' over vertical depth. Each topology will be discussed in detail in the following sections.
 
 	\subsection{ Deep Learning}
 
-		Convolutional Neural Networks are a subset of \textit{Deep Learning} models. `Deep' in this sense refers to depth-of-model as opposed to something philosophical \cite{Chollet}. The original deep leraning networks were conceived in 1943 \cite{ANN} as artificial neural networks (ANNs). These networks borrowed from the construction of the human neuronal cortex to develop a simplified computation model based on a network of connceted nodes. The nodes, or neurons of an artificial neural network are built to produce an output, for a given input. A perceptron, one of the simplest ANN architecture's is shown in figure \ref{fig:percept} as an example \cite{Aurelien}.
+		Convolutional Neural Networks are a subset of \textit{Deep Learning} models. `Deep' in this sense refers to depth-of-model as opposed to something philosophical \cite{Chollet}. The original deep learning networks were conceived in 1943 \cite{ANN} as artificial neural networks (ANNs). These networks borrowed from the construction of the human neuronal cortex to develop a simplified computation model based on a network of connected nodes. The nodes, or neurons of an artificial neural network are built to produce an output, for a given input. A perceptron, one of the simplest ANN architectures is shown in figure \ref{fig:percept} as an example \cite{Aurelien}.
 
 		\begin{figure}[htbp]
 		  \centering
@@ -193,10 +232,7 @@ The simulation and measurement data used for project is captured/simulated using
 			h_w(x) = \textrm{step}(x^Tw).
 		\end{equation}
 
-		This activation function will step from zero to one if its threshold is reached. Alternate activation functions are detailed in the appendix.
-		% TODO: ACtivation function details in Appendix
-
-	 	Deep learning models stack these weighted nodes into a `Dense' layer, and connected with other dense layers. The resulting series of connections and weights form the deep learning model's \textit{topology}.
+		This activation function will step from zero to one if its threshold is reached. Alternate activation functions are detailed in the appendix. Deep learning models stack these weighted nodes into a `Dense' layer, and connected with other dense layers. The resulting series of connections and weights form the deep learning model's \textit{topology}.
 
 		The weights for each node in the model are found using the following algorithm \cite{Chollet}:
 
@@ -281,6 +317,10 @@ The simulation and measurement data used for project is captured/simulated using
 
 		\subsubsection{ResNET}
 
+			\begin{description}
+				\item [Batch Normalization: ]  Maintains a mean output close to zero, and the output standard deviation close to 1 \cite{Keras}.
+				\item [Dropout: ] randomly sets input units to 0 with a frequency set by the \textit{dropout rate}. This helps to prevent overfitting during model training \cite{Keras}.
+			\end{description}
 
 
 \section{Optimizers and Augmentation}
@@ -310,4 +350,4 @@ Deep learning network optimizers utilize Neural network optimizers work best whe
 	\subsection{Model-Based Training}
 		Model based training utilizes ESIM software to produce training data. In its simplest conception, the `model based' approach can be thought of as a data generator for a feature based training regime. That is, a system can be trained to identify features using modeled data, providing a sensor with otherwise inaccessible data.
 
-		Alternately, generated models can be processed to provide the sensor with a more `bottom-up' training approach. The `bottom-up' concept was developed and implemented by Robert A. Brooks at M.I.T. for the ACRONYMN target recognition system \cite{Brooks}\cite{Brooks2}. This method shifts the focus of training away from what the target looks like in a specific, limited instance and focuses on the more general representation of \textit{how} the target \textit{may} look.
+		Alternately, generated models can be processed to provide the sensor with a more `bottom-up' training approach. The `bottom-up' concept was developed and implemented by Robert A. Brooks at MIT for the ACRONYMN target recognition system \cite{Brooks}\cite{Brooks2}. This method shifts the focus of training away from what the target looks like in a specific, limited instance and focuses on the more general representation of \textit{how} the target \textit{may} look.

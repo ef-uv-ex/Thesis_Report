@@ -8,6 +8,12 @@ R.~M. Hoffer.
   \url{https://www.defense.gov/News/Releases/Release/Article/2397850/electromagnetic-spectrum-superiority-strategy-released/}.
 \newblock (Accessed: 30 August 2022).
 
+\bibitem{Air_War}
+Naval Gazing.
+\newblock Aerial decoys.
+\newblock Naval Gazing \url{https://www.navalgazing.net/Aerial-Decoys}.
+\newblock (Accessed: 1 Dec 2022).
+
 \bibitem{KONG}
 Jin~Au Kong.
 \newblock {\em Electromagnetic Wave Theory}.
@@ -23,6 +29,11 @@ Holm W.~A. Richards M.~A., Scheer J.~A.
 \newblock {\em Noise}, pages 61--65.
 \newblock Scitech Publishing, Edison, NJ, 2010.
 
+\bibitem{Knott}
+Eugene Knott.
+\newblock {\em Radar Cross Section}.
+\newblock Scitech Publishing, Raleigh, NC, 2004.
+
 \bibitem{POMR_Noise}
 Holm W.~A. Richards M.~A., Scheer J.~A.
 \newblock {\em Noise}, pages 64--66.
@@ -37,11 +48,6 @@ J.~B. Johnson.
 H.~Nyquist.
 \newblock Thermal agitation of electric charge in conductors*.
 \newblock {\em Physical Review}, 32:110--113, 1928.
-
-\bibitem{Knott}
-Eugene Knott.
-\newblock {\em Radar Cross Section}.
-\newblock Scitech Publishing, Raleigh, NC, 2004.
 
 \bibitem{Chollet}
 Francois Chollet.
@@ -83,6 +89,12 @@ R.~J.~Williams D.~E.~Rumelhart, G. E.~Hinton.
 \bibitem{VGG-19}
 {\em Proc.\ International Conference on Learning Represenations 2015}. arXiv,
   2015.
+
+\bibitem{Keras}
+Keras Functional~API Documentation.
+\newblock Keras functional api documentation.
+\newblock Keras \url{https://keras.io/api}.
+\newblock (Accessed: 1 Dec 2022).
 
 \bibitem{SAR_Survey}
 Khalid El-Darymli, Eric~W. Gill, Peter Mcguire, Desmond Power, and Cecilia

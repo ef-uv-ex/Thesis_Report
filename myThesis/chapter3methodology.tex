@@ -2,6 +2,7 @@
 \label{ch:methodology}
 \glsresetall
 
+
 \section{Targets}
 
   Five target models were chosen for this experiment. Each model is a missile-surrogate with a shared fuselage, and a unique nose cone. The dimensions of the fuselage and the nose cones are listed in table \ref{tab:models}. Nose cones 1-3 are simple cones with a fixed base diameter and edge length. Nose cones 4 and 5 are curved. They share the common 3 inch base diameter, with  differing diameters as they extend from the base to tip. The additional measurements represent the diameter of the cone at equally spaced intervals along the edge from base to tip. Each model is made of aluminum as is assumed to behave as a PEC in the presence of EMR. The Cad models of each missile nose is shown in figures \ref{nose_1_2}, \ref{nose_3_4}, and \ref{nose_5}. The side and top view of the missile is shown in figure \ref{fig:missile_body}.
@@ -20,22 +21,20 @@
     \label{fig:missile_body}
   \end{figure}
 
-
-
-  % TODO: Insert photos of the nose cones, and body assembly.
+  Simulation models were developed using Blender 3d, and exported as .stl mesh models. Mesh models were converted to solids form mesh, and exported as .step geometries using FreeCad. The .step format worked well with CADFeko's internal meshing system. Since Blender 3D does not export .step natively, the additional step of importing the .stl mesh into FreeCad was necessary.
 
 \section{Measurement}
-  The targets were measured at the Air Force Institute of Technologies (AFIT) Compact Radar Range. The layout of the AFIT range is shown in figure \ref{fig:range}. The range uses a BlueMax G6 instrumentation radar (blue items in schematic), with a Vivaldi wide-band antenna configured in both horizontal and vertical polarizations. Transmitted signals are directed at a cruved reflector located 3 meters from the antenna. Ideally, the incident field will be a plane wave. That is, the wave front is the same when measured vertically or horizontally. However, the short distance between the antenna and the target will produce a curved wave-front surface. The reflector helps to `flatten' the wave front, and make it appear more planer.
+  The targets were measured at the Air Force Institute of Technologies (AFIT) Compact Radar Range. The layout of the AFIT range is shown in figure \ref{fig:range}. The range uses a BlueMax G6 instrumentation radar (blue items in schematic), with a Vivaldi wide-band antenna configured in both horizontal and vertical polarizations. Transmitted signals are directed at a curved reflector located 3 meters from the antenna. Ideally, the incident field will be a plane wave. That is, the wave front is the same when measured vertically or horizontally. However, the short distance between the antenna and the target will produce a curved wave-front surface. The reflector helps to `flatten' the wave front, and make it appear more planer.
 
   Targets are placed on a foam column located 7 meters from the reflector. The column is 2 meters tall, and can rotate 360 degrees. Foam is used, as its intrinsic properties are similar to air, and do not contribute significantly to scene clutter.
 
   \begin{figure}[htbp]
     \centering
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.8\textwidth}
       \centering
       \includegraphics[width=.8\linewidth]{range.png}
     \end{subfigure}%
-    \begin{subfigure}{.5\textwidth}
+    \begin{subfigure}{.8\textwidth}
       \centering
       \includegraphics[width=.8\linewidth]{range_side.png}
     \end{subfigure}
@@ -69,74 +68,50 @@
 
   \begin{table}
     \centering
-    \begin{tabular}{lr}
+    \begin{tabular}{|l|r|}
+      \hline
       Transmitter Power: & $40$[dBm]\\
+      \hline
       Tx Gain: $15$[dB]\\
+      \hline
       Rx Gain: $15$[dB]\\
+      \hline
       IF BW: $200$[kHz]\\
+      \hline
       Noise Figure, $F$:  $3$[dB]\\
+      \hline
       Tx Loss: $4.5$[dB]\\
+      \hline
       Rx Loss: $4.5$[dB]\\
+      \hline
       Operating Temp: $68$[F]\\
+      \hline
       Pulse Width: & $10[ns]$\\
+      \hline
       Frequency Range: & $4.5-5.5 [GHz]$, $10 [MHz]$ step\\
+      \hline
       Aspect-angle Range: & $0-360 ^{\circ}$, $1^{\circ}$ step\\
+      \hline
       Integration Factor: & $1024$ \\
+      \hline
+      Transmit Delay : & $330$ [ns] \\
+      \hline
+      Receiver Delay : & $434-446$ [ns] \\
+      \hline
     \end{tabular}
     \caption{Measurement parameters.}
     \label{tab:m_params}
   \end{table}
 
+  % TODO: add quiet zone information
+
   The radar used for this project produces a discrete RCS measurement at individual frequencies as opposed to a time domain response for each pulse. Since this time-domain information was unavailable, this experiment attempts to recreate the time-domain response, by capturing discrete measurements for each frequency and stitching them together into a frequency domain equivalent for the expected time-domain response.
 
-  The integration factor was chosen to provide sufficiently accurate measurements. This ideal measurement serves as a signal to noise performance baseline.
-
-  \subsection{Calibration}
-    \label{sec:cal}
-    Open air measurements must account for two distinct error sources:  range intrusion, and instrument calibration. Range intrusion accounts for spurious echo's from the floor, walls, target mount, and other physical objects in the range that interact with the incident field. These signals constitute the `background' of the scene and can be mitigated in two ways:  1. gating returns at the receiver to create quiet zones; 2. Implementing background subtraction using
-
-    \begin{equation}
-      E_{t, true} = E_{t, raw} - E_{t, bg}
-    \end{equation}
-
-    where $E_{t, raw}$ and $E_{t, bg}$ are measurements of the scene with and without the target in place. While background subtraction will help to reduce spurious signals, it cannot account for target-mount interactions and will not completely eliminate spurious returns.
-
-    The instrument radar is calibrated using the substitution method:  a simple target whose RCS can be readily calculated is used to create a proportionality constant which accounts for deviations in radar performance \cite{Knott}. Since the range distances are fixed, the only factor of the radar range equation that will change is either the target's RCS, or fluctuation in transmitted power over frequency. By measuring a target with a known RCS, the proportionality constant $C$ can determined using
-
-    \begin{equation}
-      C = \frac{E_{cal, sim}}{E_{cal, raw} - E_{cal, bg}}
-    \end{equation}
-
-    where $E_{cal, raw}$ and $E_{cal, bg}$ are measurements of the scene with and without the calibration target respectively. The term $E_{cal, sim}$ is the RCS measurement of the calibration target. This experiment utilizes a 7 inch calibration cylinder whose RCS is modeled using CADFeko. Notably, the substitution method employs background subtraction as discussed previously.
-
-    Prior to data processing, all target measurements are calibrated using
-
-    \begin{equation}
-      E_{t, true} = \frac{E_{t, raw} - E_{t, bg}}{E_{cal, raw} - E_{cal, bg}}
-    \end{equation}
-
-  \subsection{Measurement Results}
-
-    Figures \ref{fig:n1}, \ref{fig:n2}, \ref{fig:n3}, \ref{fig:n4}, and \ref{fig:n5} represent the calibrated RCS measurements of missiles 1, 2, 3, 4, and 5 respectively. Each figure include a plot of the vertically and horizontally polarized radar configuration.
-
-    The measured values are converted to RCS for the purpose of display using \ref{eq:ieee_rcs}, with a transmitted signal of $E_t = 1 [V/m^2]$, and converted to $RCS [dB_{sm}]$ using
-
-    \begin{equation}
-      RCS [dB] = 10 * \log \left( \frac{RCS [m^2]}{1 [m^2]}\right)
-    \end{equation}
-
-    The green sector represent the RCS data that is used to train the machine learning model. The RCS polar plots show only one frequency. The total frequency content of each target over all angles are shown in figures \ref{fig:c1}, \ref{fig:c2}, \ref{fig:c3}, \ref{fig:c4}, and \ref{fig:c5}. Again, figures are shown in $RCS [\textrm{dB}_{sm}]$ represent the calibrated RCS measurements of missiles 1, 2, 3, 4, and 5 respectively. Each figure include a plot of the vertically and horizontally polarized radar configuration.
+  The integration factor was chosen to provide sufficiently accurate measurements. This ideal measurement serves as a signal to noise performance baseline. The receiver delay of $434-446$ [ns] puts the quiet zone window at approximately 76 meters when accounting for the reducing transmission speed of waves in transmission line. The target fixture is located 14 meters from the antenna, with the remaining distance accounted for by feedline from the instrument to the antenna. This window was confirmed by `walking` the range. This operation transmits pulses from the antenna, and shifts the reception window until a known target is captured in the desired quiet zone.
 
 \section{Simulation}
 
-  Simulations were completed using Altair's CADFeko program. CADFeko uses an iterative Method of Moments - Surface Equivalent Principle (MoM, SEP) algorithm to compute the RCS response of the target model. Method of Moments is used to calculate scattering for targets in the Resonant regime:  target size is approximately on the same order as the incident wave length, but less than 10 times larger. [CITE SOMETHING FOR MOM, \cite{Knott}]. At 5 GHz, the incident wave length is 60 millimeters. At 457mm, the fuselage body is 7.62 times larger than the 5 GHz wavelength placing towards the upper end of the resonant regime. The smaller nose cones, ranging from 101 to 228 mm fit more comfortably into the resonant regime.
-
-  Models were developed in Blender 3d. Models were exported from blender as .stl mesh objects, and imported into FreeCAD where they were converted to solids, and again exported as .step geometries. CADFeko must develop its own mesh for the imported geometries based on the requested frequency simulation range. Converting objects from a .stl mesh, to a .step geometry was the smoothest way to convert models into CADFeko friendly geometries given the authors limited experience with computer aided design.
-
-  \subsection{Simulation Results}
-
-    Figures \ref{fig:ns1}, \ref{fig:ns2}, \ref{fig:ns3}, \ref{fig:ns4}, and \ref{fig:ns5} represent the simulated RCS of missiles 1, 2, 3, 4, and 5 respectively. Each figure include a plot of the vertically and horizontally polarized radar configuration.
-
+  Simulations were completed using Altair's CADFeko Electromagnetic Simulation Suite. CADFeko uses an iterative \gls{MOM-SEP} algorithm to compute the RCS response of the target model. The output data from the simulation is in phasor form. Method of Moments is used to calculate scattering for targets in the resonant regime:  when physical target size is roughly the same size as the incident wave length, but less than 10 times larger \cite{Knott}. At 5 GHz, the incident wave length is 60 millimeters. At 457mm, the fuselage body is 7.62 times larger than the 5 GHz wavelength placing towards the upper end of the resonant regime. The nose cones range in size from 101 to 228 mm, which fit comfortably in the resonant regime.
 
 \section{Data Processing}
 
@@ -192,6 +167,30 @@
     where $\mu$ is the mean value of the vector, and $\sigma$ is the standard deviation.
 
   \subsection{Comparison}
+  \label{sec:comparison}
+
+    Signals are compared using a cross-correlation function. The cross correlation function measures the similarity between two signals, and outputs a correlation coefficient, $\rho$. Values for $\rho$ range from $\pm 1$ for correlated, and anti-correlated signals respectively, and $0$ for un-correlated signals. As an example, the cross correlation of a signal with itself, will have $\rho=1$.
+
+    Signal similarity is measured over all frequencies, at each angle using
+
+    \begin{equation}\label{eq:corr}
+      \rho = Corr( E_{1, tt/pp}(f, a_i), E_{2, tt/pp}(f, a_i)  )
+    \end{equation}
+
+    where $E_{1, pol}$ and $E_{2, pol}$ RCS phasor response measurements for signals 1 and 2, at angle $a_i$ and polarization $pol$, over all frequencies $f$. Signals will be selected from the pool of simulated and measured RCS response. Measuring the correlation strength of all targets with one another will serve as a means of identifying breakdowns in target classification. The correlation function is always applied to signals with similar polarizations.
+
+    To measure the breakdown in signal correlation as noise is applied, the following algorithm is employed:
+
+    \begin{enumerate}
+      \item Signals 1 and 2 are selected
+      \item Noise is applied to signal 1 and signal 2
+      \item Signals one and two are augmented per angle
+      \item Equation \ref{eq:corr} is applied for each angle
+      \item The resulting vector of correlation coefficients is plotted against angle
+    \end{enumerate}
+
+    Correlation performance is reported in SNR. The SNR for each target is the average phasor value of all data elements in the matrices $E_{tt}$ and $E_{pp}$ for each target.
+
 
 \section{Neural Network Development}
 

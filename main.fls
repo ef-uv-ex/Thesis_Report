@@ -1533,6 +1533,11 @@ INPUT ./myThesis/chapter4results.tex
 INPUT myThesis/chapter4results.tex
 INPUT ./myThesis/chapter4results.tex
 INPUT myThesis/chapter4results.tex
+INPUT ./figures//Correlation_vs_SNR.png
+INPUT ./figures//Correlation_vs_SNR.png
+INPUT figures//Correlation_vs_SNR.png
+INPUT ./figures//Correlation_vs_SNR.png
+INPUT ./figures//Correlation_vs_SNR.png
 INPUT ./myThesis/chapter5conclusion.tex
 INPUT myThesis/chapter5conclusion.tex
 INPUT ./myThesis/chapter5conclusion.tex
