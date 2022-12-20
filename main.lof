@@ -7,23 +7,56 @@
 \contentsline {figure}{\numberline {7}{\ignorespaces Perceptron node}}{17}{figure.caption.14}%
 \contentsline {figure}{\numberline {8}{\ignorespaces CNN overview}}{19}{figure.caption.15}%
 \contentsline {figure}{\numberline {9}{\ignorespaces Side and top view of the missile surrogate (Cad model)\relax }}{25}{figure.caption.18}%
-\contentsline {figure}{\numberline {10}{\ignorespaces AFIT Compact Range Schematic}}{26}{figure.caption.19}%
-\contentsline {figure}{\numberline {11}{\ignorespaces Average Correlation vs SNR}}{34}{figure.caption.22}%
-\contentsline {figure}{\numberline {12}{\ignorespaces Simulation targets 1 and 2\relax }}{40}{figure.caption.28}%
-\contentsline {figure}{\numberline {13}{\ignorespaces Simulation targets 3 and 4\relax }}{41}{figure.caption.29}%
-\contentsline {figure}{\numberline {14}{\ignorespaces Simulation targets 3 and 4\relax }}{42}{figure.caption.30}%
-\contentsline {figure}{\numberline {15}{\ignorespaces Missile 1 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{43}{figure.caption.31}%
-\contentsline {figure}{\numberline {16}{\ignorespaces Missile 2 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{44}{figure.caption.32}%
-\contentsline {figure}{\numberline {17}{\ignorespaces Missile 3 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{44}{figure.caption.33}%
-\contentsline {figure}{\numberline {18}{\ignorespaces Missile 4 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{45}{figure.caption.34}%
-\contentsline {figure}{\numberline {19}{\ignorespaces Missile 5 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{45}{figure.caption.35}%
-\contentsline {figure}{\numberline {20}{\ignorespaces Missile 1 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{46}{figure.caption.36}%
-\contentsline {figure}{\numberline {21}{\ignorespaces Missile 2 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{46}{figure.caption.37}%
-\contentsline {figure}{\numberline {22}{\ignorespaces Missile 3 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{46}{figure.caption.38}%
-\contentsline {figure}{\numberline {23}{\ignorespaces Missile 4 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{47}{figure.caption.39}%
-\contentsline {figure}{\numberline {24}{\ignorespaces Missile 5 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{47}{figure.caption.40}%
-\contentsline {figure}{\numberline {25}{\ignorespaces Missile 1 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{48}{figure.caption.41}%
-\contentsline {figure}{\numberline {26}{\ignorespaces Missile 2 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{49}{figure.caption.42}%
-\contentsline {figure}{\numberline {27}{\ignorespaces Missile 3 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{49}{figure.caption.43}%
-\contentsline {figure}{\numberline {28}{\ignorespaces Missile 4 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{50}{figure.caption.44}%
-\contentsline {figure}{\numberline {29}{\ignorespaces Missile 5 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{50}{figure.caption.45}%
+\contentsline {figure}{\numberline {10}{\ignorespaces AFIT Compact Range Schematic}}{27}{figure.caption.19}%
+\contentsline {figure}{\numberline {11}{\ignorespaces Average Correlation vs SNR}}{36}{figure.caption.22}%
+\contentsline {figure}{\numberline {12}{\ignorespaces VGG-19 Model Testing, and Selection}}{38}{figure.caption.24}%
+\contentsline {figure}{\numberline {13}{\ignorespaces VGG-19 Siamese Network Performance}}{39}{figure.caption.25}%
+\contentsline {figure}{\numberline {14}{\ignorespaces VGG-19 Siamese Network Performance}}{42}{figure.caption.26}%
+\contentsline {figure}{\numberline {15}{\ignorespaces Simulation targets 1 and 2\relax }}{46}{figure.caption.31}%
+\contentsline {figure}{\numberline {16}{\ignorespaces Simulation targets 3 and 4\relax }}{47}{figure.caption.32}%
+\contentsline {figure}{\numberline {17}{\ignorespaces Simulation targets 3 and 4\relax }}{48}{figure.caption.33}%
+\contentsline {figure}{\numberline {18}{\ignorespaces Missile 1 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{49}{figure.caption.34}%
+\contentsline {figure}{\numberline {19}{\ignorespaces Missile 2 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{50}{figure.caption.35}%
+\contentsline {figure}{\numberline {20}{\ignorespaces Missile 3 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{50}{figure.caption.36}%
+\contentsline {figure}{\numberline {21}{\ignorespaces Missile 4 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{51}{figure.caption.37}%
+\contentsline {figure}{\numberline {22}{\ignorespaces Missile 5 \leavevmode {\color {green}(Test)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{51}{figure.caption.38}%
+\contentsline {figure}{\numberline {23}{\ignorespaces Missile 1 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{52}{figure.caption.39}%
+\contentsline {figure}{\numberline {24}{\ignorespaces Missile 2 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{52}{figure.caption.40}%
+\contentsline {figure}{\numberline {25}{\ignorespaces Missile 3 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{52}{figure.caption.41}%
+\contentsline {figure}{\numberline {26}{\ignorespaces Missile 4 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{53}{figure.caption.42}%
+\contentsline {figure}{\numberline {27}{\ignorespaces Missile 5 \leavevmode {\color {green}(Test)}: Total RCS. Vertical (tt) and Horizontal (pp) polarizations \relax }}{53}{figure.caption.43}%
+\contentsline {figure}{\numberline {28}{\ignorespaces Missile 1 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{54}{figure.caption.44}%
+\contentsline {figure}{\numberline {29}{\ignorespaces Missile 2 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{55}{figure.caption.45}%
+\contentsline {figure}{\numberline {30}{\ignorespaces Missile 3 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{55}{figure.caption.46}%
+\contentsline {figure}{\numberline {31}{\ignorespaces Missile 4 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{56}{figure.caption.47}%
+\contentsline {figure}{\numberline {32}{\ignorespaces Missile 5 \leavevmode {\color {red}(Sim)}: RCS cut at 5 GHz. Vertical (tt) and Horizontal (pp) polarizations \relax }}{56}{figure.caption.48}%
+\contentsline {figure}{\numberline {33}{\ignorespaces Missile 1 Correlations (Sim/Meas)}}{57}{figure.caption.49}%
+\contentsline {figure}{\numberline {34}{\ignorespaces Missile 1 Correlations (Sim/Meas)}}{58}{figure.caption.50}%
+\contentsline {figure}{\numberline {35}{\ignorespaces Missile 1 Correlations (Sim/Meas)}}{59}{figure.caption.51}%
+\contentsline {figure}{\numberline {36}{\ignorespaces Missile 1 Correlations (Sim/Meas)}}{60}{figure.caption.52}%
+\contentsline {figure}{\numberline {37}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{61}{figure.caption.53}%
+\contentsline {figure}{\numberline {38}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{62}{figure.caption.54}%
+\contentsline {figure}{\numberline {39}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{63}{figure.caption.55}%
+\contentsline {figure}{\numberline {40}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{64}{figure.caption.56}%
+\contentsline {figure}{\numberline {41}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{65}{figure.caption.57}%
+\contentsline {figure}{\numberline {42}{\ignorespaces Missile 1 Correlations (Sim/Sim)}}{66}{figure.caption.58}%
+\contentsline {figure}{\numberline {43}{\ignorespaces VGG-19, -10 dBm Confusion Matrix}}{67}{figure.caption.59}%
+\contentsline {figure}{\numberline {44}{\ignorespaces VGG-19, -5 dBm Confusion Matrix}}{68}{figure.caption.60}%
+\contentsline {figure}{\numberline {45}{\ignorespaces VGG-19, 0 dBm Confusion Matrix}}{69}{figure.caption.61}%
+\contentsline {figure}{\numberline {46}{\ignorespaces VGG-19, 5 dBm Confusion Matrix}}{70}{figure.caption.62}%
+\contentsline {figure}{\numberline {47}{\ignorespaces VGG-19, 10 dBm Confusion Matrix}}{71}{figure.caption.63}%
+\contentsline {figure}{\numberline {48}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=-10 dB\relax }}{71}{figure.caption.64}%
+\contentsline {figure}{\numberline {49}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=-8 dB\relax }}{72}{figure.caption.65}%
+\contentsline {figure}{\numberline {50}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=-6 dB\relax }}{72}{figure.caption.66}%
+\contentsline {figure}{\numberline {51}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=-4 dB\relax }}{72}{figure.caption.67}%
+\contentsline {figure}{\numberline {52}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=-2 dB\relax }}{73}{figure.caption.68}%
+\contentsline {figure}{\numberline {53}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=0 dB\relax }}{73}{figure.caption.69}%
+\contentsline {figure}{\numberline {54}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=3 dB\relax }}{73}{figure.caption.70}%
+\contentsline {figure}{\numberline {55}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=5 dB\relax }}{74}{figure.caption.71}%
+\contentsline {figure}{\numberline {56}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=7 dB\relax }}{74}{figure.caption.72}%
+\contentsline {figure}{\numberline {57}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=9 dB\relax }}{74}{figure.caption.73}%
+\contentsline {figure}{\numberline {58}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=11 dB\relax }}{75}{figure.caption.74}%
+\contentsline {figure}{\numberline {59}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=13 dB\relax }}{75}{figure.caption.75}%
+\contentsline {figure}{\numberline {60}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=15 dB\relax }}{75}{figure.caption.76}%
+\contentsline {figure}{\numberline {61}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=18 dB\relax }}{76}{figure.caption.77}%
+\contentsline {figure}{\numberline {62}{\ignorespaces Angle accuracy and Classification for the VGG-19 siamese network, SNR=20 dB\relax }}{76}{figure.caption.78}%

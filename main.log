@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.10)  6 DEC 2022 14:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.5.10)  19 DEC 2022 12:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -915,7 +915,7 @@ Package translations Info: loading dictionary `translations-basic-dictionary' f
 or `english'. on input line 15.
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<figures//afitlogo.pdf, id=200, 614.295pt x 794.97pt>
+<figures//afitlogo.pdf, id=229, 614.295pt x 794.97pt>
 File: figures//afitlogo.pdf Graphic file (type pdf)
 <use figures//afitlogo.pdf>
 Package pdftex.def Info: figures//afitlogo.pdf  used on input line 18.
@@ -958,15 +958,15 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [6] (./main.lof
 [7
 
-])
+] [8] [9])
 \tf@lof=\write6
 \openout6 = `main.lof'.
 
- [8] (./main.lot)
+ [10] (./main.lot)
 \tf@lot=\write7
 \openout7 = `main.lot'.
 
- [9
+ [11
 
 ] (./myThesis/chapter1introduction.tex
 Chapter I.
@@ -974,12 +974,12 @@ Chapter I.
 
 
 ]
-<figures//adm-160.png, id=402, 270.00874pt x 268.00125pt>
+<figures//adm-160.png, id=531, 270.00874pt x 268.00125pt>
 File: figures//adm-160.png Graphic file (type png)
 <use figures//adm-160.png>
 Package pdftex.def Info: figures//adm-160.png  used on input line 18.
 (pdftex.def)             Requested size: 173.44865pt x 172.16223pt.
-<figures//agm-86.png, id=404, 489.83pt x 389.455pt>
+<figures//agm-86.png, id=533, 489.83pt x 389.455pt>
 File: figures//agm-86.png Graphic file (type png)
 <use figures//agm-86.png>
 Package pdftex.def Info: figures//agm-86.png  used on input line 22.
@@ -987,7 +987,7 @@ Package pdftex.def Info: figures//agm-86.png  used on input line 22.
  [2]) (./myThesis/chapter2background.tex [3 <./figures//adm-160.png> <./figures
 //agm-86.png>]
 Chapter II.
-<figures//flow_chart.png, id=422, 721.2546pt x 387.849pt>
+<figures//flow_chart.png, id=550, 721.2546pt x 387.849pt>
 File: figures//flow_chart.png Graphic file (type png)
 <use figures//flow_chart.png>
 Package pdftex.def Info: figures//flow_chart.png  used on input line 11.
@@ -995,33 +995,33 @@ Package pdftex.def Info: figures//flow_chart.png  used on input line 11.
 [4
 
  <./figures//flow_chart.png>] [5] [6] [7] [8] [9] [10] [11] [12]
-<figures//msl_top.png, id=533, 1927.2pt x 1084.05pt>
+<figures//msl_top.png, id=661, 1927.2pt x 1084.05pt>
 File: figures//msl_top.png Graphic file (type png)
 <use figures//msl_top.png>
 Package pdftex.def Info: figures//msl_top.png  used on input line 157.
 (pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
-<figures//msl_side.png, id=534, 1927.2pt x 1084.05pt>
+<figures//msl_side.png, id=662, 1927.2pt x 1084.05pt>
 File: figures//msl_side.png Graphic file (type png)
 <use figures//msl_side.png>
 Package pdftex.def Info: figures//msl_side.png  used on input line 161.
 (pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
-<figures//MSL-1_s_m2_pp.png, id=535, 641.7576pt x 640.3122pt>
+<figures//MSL-1_s_m2_pp.png, id=663, 641.7576pt x 640.3122pt>
 File: figures//MSL-1_s_m2_pp.png Graphic file (type png)
 <use figures//MSL-1_s_m2_pp.png>
 Package pdftex.def Info: figures//MSL-1_s_m2_pp.png  used on input line 171.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-1_s_m2_pp_5GHz.png, id=536, 569.4876pt x 641.0349pt>
+<figures//MSL-1_s_m2_pp_5GHz.png, id=664, 569.4876pt x 641.0349pt>
 File: figures//MSL-1_s_m2_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-1_s_m2_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-1_s_m2_pp_5GHz.png  used on input line 17
 5.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-1_s_dB_pp.png, id=537, 641.7576pt x 640.3122pt>
+<figures//MSL-1_s_dB_pp.png, id=665, 641.7576pt x 640.3122pt>
 File: figures//MSL-1_s_dB_pp.png Graphic file (type png)
 <use figures//MSL-1_s_dB_pp.png>
 Package pdftex.def Info: figures//MSL-1_s_dB_pp.png  used on input line 185.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-1_s_dB_pp_5GHz.png, id=538, 569.4876pt x 640.3122pt>
+<figures//MSL-1_s_dB_pp_5GHz.png, id=666, 569.4876pt x 640.3122pt>
 File: figures//MSL-1_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-1_s_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-1_s_dB_pp_5GHz.png  used on input line 18
@@ -1032,7 +1032,7 @@ Package pdftex.def Info: figures//MSL-1_s_dB_pp_5GHz.png  used on input line 18
 LaTeX Warning: Reference `fig:freq_angle' on page 13 undefined on input line 19
 5.
 
-<figures//freq_angle.png, id=539, 362.81pt x 271.56pt>
+<figures//freq_angle.png, id=667, 362.81pt x 271.56pt>
 File: figures//freq_angle.png Graphic file (type png)
 <use figures//freq_angle.png>
 Package pdftex.def Info: figures//freq_angle.png  used on input line 199.
@@ -1040,14 +1040,14 @@ Package pdftex.def Info: figures//freq_angle.png  used on input line 199.
 [13 <./figures//msl_top.png> <./figures//msl_side.png>] [14 <./figures//MSL-1_s
 _m2_pp.png> <./figures//MSL-1_s_m2_pp_5GHz.png> <./figures//MSL-1_s_dB_pp.png> 
 <./figures//MSL-1_s_dB_pp_5GHz.png>] [15 <./figures//freq_angle.png>]
-<figures//perceptron.png, id=578, 127.97812pt x 60.97781pt>
+<figures//perceptron.png, id=706, 127.97812pt x 60.97781pt>
 File: figures//perceptron.png Graphic file (type png)
 <use figures//perceptron.png>
 Package pdftex.def Info: figures//perceptron.png  used on input line 218.
 (pdftex.def)             Requested size: 346.89732pt x 165.29727pt.
  [16]
 [17 <./figures//perceptron.png>]
-<figures//CNN_basics.png, id=608, 691.383pt x 194.1654pt>
+<figures//CNN_basics.png, id=736, 691.383pt x 194.1654pt>
 File: figures//CNN_basics.png Graphic file (type png)
 <use figures//CNN_basics.png>
 Package pdftex.def Info: figures//CNN_basics.png  used on input line 258.
@@ -1056,299 +1056,633 @@ Package pdftex.def Info: figures//CNN_basics.png  used on input line 258.
 [21] [22] [23]) (./myThesis/chapter3methodology.tex [24]
 Chapter III.
 
-LaTeX Warning: Reference `nose_1_2' on page 25 undefined on input line 8.
+LaTeX Warning: Reference `nose_1_2' on page 25 undefined on input line 11.
 
 
-LaTeX Warning: Reference `nose_3_4' on page 25 undefined on input line 8.
+LaTeX Warning: Reference `nose_3_4' on page 25 undefined on input line 11.
 
 
-LaTeX Warning: Reference `nose_5' on page 25 undefined on input line 8.
+LaTeX Warning: Reference `nose_5' on page 25 undefined on input line 11.
 
 File: figures//msl_side.png Graphic file (type png)
 <use figures//msl_side.png>
-Package pdftex.def Info: figures//msl_side.png  used on input line 14.
+Package pdftex.def Info: figures//msl_side.png  used on input line 17.
 (pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
 File: figures//msl_top.png Graphic file (type png)
 <use figures//msl_top.png>
-Package pdftex.def Info: figures//msl_top.png  used on input line 18.
+Package pdftex.def Info: figures//msl_top.png  used on input line 21.
 (pdftex.def)             Requested size: 173.44865pt x 97.56029pt.
 [25
 
 ]
-<figures//range.png, id=671, 516.80579pt x 266.49562pt>
+<figures//range.png, id=800, 516.80579pt x 266.49562pt>
 File: figures//range.png Graphic file (type png)
 <use figures//range.png>
-Package pdftex.def Info: figures//range.png  used on input line 35.
+Package pdftex.def Info: figures//range.png  used on input line 38.
 (pdftex.def)             Requested size: 277.5189pt x 143.10847pt.
-<figures//range_side.png, id=672, 449.80547pt x 268.75406pt>
+<figures//range_side.png, id=801, 449.80547pt x 268.75406pt>
 File: figures//range_side.png Graphic file (type png)
 <use figures//range_side.png>
-Package pdftex.def Info: figures//range_side.png  used on input line 39.
+Package pdftex.def Info: figures//range_side.png  used on input line 42.
 (pdftex.def)             Requested size: 277.5189pt x 165.82202pt.
 
-Overfull \hbox (260.17464pt too wide) in paragraph at lines 33--41
+Overfull \hbox (260.17464pt too wide) in paragraph at lines 36--44
  [][][] 
  []
 
-[26 <./figures//range.png> <./figures//range_side.png>] [27] [28] [29] [30])
-(./myThesis/chapter4results.tex [31]
+[26] [27 <./figures//range.png> <./figures//range_side.png>] [28] [29] [30])
+(./myThesis/chapter4results.tex [31] [32]
 Chapter IV.
-[32
+[33
 
-]
-<figures//Correlation_vs_SNR.png, id=742, 925.056pt x 693.792pt>
+] [34]
+<figures//Correlation_vs_SNR.png, id=878, 925.056pt x 693.792pt>
 File: figures//Correlation_vs_SNR.png Graphic file (type png)
 <use figures//Correlation_vs_SNR.png>
-Package pdftex.def Info: figures//Correlation_vs_SNR.png  used on input line 41
+Package pdftex.def Info: figures//Correlation_vs_SNR.png  used on input line 45
 .
 (pdftex.def)             Requested size: 346.89732pt x 260.17136pt.
- [33]
+ [35] [36 <./figures//Correlation_vs_SNR.png>]
 
-LaTeX Warning: Reference `tab:vgg-19_params' on page 34 undefined on input line
- 58.
+LaTeX Warning: Reference `fig:vgg-19_performance' on page 37 undefined on input
+ line 65.
 
-[34 <./figures//Correlation_vs_SNR.png>]) (./myThesis/chapter5conclusion.tex
-[35] [36]
+<figures//Acc_5000.png, id=890, 642.4803pt x 640.3122pt>
+File: figures//Acc_5000.png Graphic file (type png)
+<use figures//Acc_5000.png>
+Package pdftex.def Info: figures//Acc_5000.png  used on input line 107.
+(pdftex.def)             Requested size: 346.89732pt x 345.72435pt.
+[37] [38 <./figures//Acc_5000.png>]
+<figures//vgg-19_siamese_accuracy.png, id=904, 923.6106pt x 688.7331pt>
+File: figures//vgg-19_siamese_accuracy.png Graphic file (type png)
+<use figures//vgg-19_siamese_accuracy.png>
+Package pdftex.def Info: figures//vgg-19_siamese_accuracy.png  used on input li
+ne 118.
+(pdftex.def)             Requested size: 346.89732pt x 258.68413pt.
+
+
+LaTeX Warning: Reference `tab:vgg-19_confusion_error' on page 39 undefined on i
+nput line 123.
+
+[39 <./figures//vgg-19_siamese_accuracy.png>]
+Overfull \hbox (3.82825pt too wide) in paragraph at lines 139--140
+[]\OT1/cmr/m/n/12 The VGG-19 sys-tem's depth pre-vented the net-work from gn-er
+-al-iz-ing the pararmters
+ []
+
+[40]
+<figures//acc_2000.png, id=926, 642.4803pt x 640.3122pt>
+File: figures//acc_2000.png Graphic file (type png)
+<use figures//acc_2000.png>
+Package pdftex.def Info: figures//acc_2000.png  used on input line 149.
+(pdftex.def)             Requested size: 346.89732pt x 345.72435pt.
+) (./myThesis/chapter5conclusion.tex [41] [42 <./figures//acc_2000.png>]
 Chapter V.
-) (./myThesis/appendix.tex [37
+) (./myThesis/appendix.tex [43
 
 ]
 Appendix A.
 
 Package hyperref Warning: bookmark level for unknown appendix defaults to 0.
 
-[38
+[44
 
-] [39]
+] [45]
 Appendix B.
-<figures//nose_1.png, id=779, 295.85532pt x 474.64828pt>
+<figures//nose_1.png, id=953, 295.85532pt x 474.64828pt>
 File: figures//nose_1.png Graphic file (type png)
 <use figures//nose_1.png>
 Package pdftex.def Info: figures//nose_1.png  used on input line 50.
 (pdftex.def)             Requested size: 173.44865pt x 278.27287pt.
-<figures//nose_2.png, id=780, 272.51813pt x 551.05875pt>
+<figures//nose_2.png, id=954, 272.51813pt x 551.05875pt>
 File: figures//nose_2.png Graphic file (type png)
 <use figures//nose_2.png>
 Package pdftex.def Info: figures//nose_2.png  used on input line 54.
 (pdftex.def)             Requested size: 173.44865pt x 350.72562pt.
-<figures//nose_3.png, id=781, 194.22563pt x 553.69359pt>
+<figures//nose_3.png, id=955, 194.22563pt x 553.69359pt>
 File: figures//nose_3.png Graphic file (type png)
 <use figures//nose_3.png>
 Package pdftex.def Info: figures//nose_3.png  used on input line 64.
 (pdftex.def)             Requested size: 173.44865pt x 494.4755pt.
-<figures//nose_4.png, id=782, 277.035pt x 335.00156pt>
+<figures//nose_4.png, id=956, 277.035pt x 335.00156pt>
 File: figures//nose_4.png Graphic file (type png)
 <use figures//nose_4.png>
 Package pdftex.def Info: figures//nose_4.png  used on input line 68.
 (pdftex.def)             Requested size: 173.44865pt x 209.73839pt.
-<figures//nose_5.png, id=783, 275.52937pt x 306.01828pt>
+<figures//nose_5.png, id=957, 275.52937pt x 306.01828pt>
 File: figures//nose_5.png Graphic file (type png)
 <use figures//nose_5.png>
 Package pdftex.def Info: figures//nose_5.png  used on input line 76.
 (pdftex.def)             Requested size: 346.89732pt x 385.32356pt.
-[40
+[46
 
- <./figures//nose_1.png> <./figures//nose_2.png>] [41 <./figures//nose_3.png> <
-./figures//nose_4.png>] [42 <./figures//nose_5.png>]
+ <./figures//nose_1.png> <./figures//nose_2.png>] [47 <./figures//nose_3.png> <
+./figures//nose_4.png>] [48 <./figures//nose_5.png>]
 Appendix C.
-<figures//MSL-1_m_dB_tt_5GHz.png, id=801, 569.4876pt x 641.0349pt>
+<figures//MSL-1_m_dB_tt_5GHz.png, id=975, 569.4876pt x 641.0349pt>
 File: figures//MSL-1_m_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-1_m_dB_tt_5GHz.png>
-Package pdftex.def Info: figures//MSL-1_m_dB_tt_5GHz.png  used on input line 88
+Package pdftex.def Info: figures//MSL-1_m_dB_tt_5GHz.png  used on input line 87
 .
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-1_m_dB_pp_5GHz.png, id=802, 569.4876pt x 641.0349pt>
+<figures//MSL-1_m_dB_pp_5GHz.png, id=976, 569.4876pt x 641.0349pt>
 File: figures//MSL-1_m_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-1_m_dB_pp_5GHz.png>
-Package pdftex.def Info: figures//MSL-1_m_dB_pp_5GHz.png  used on input line 92
+Package pdftex.def Info: figures//MSL-1_m_dB_pp_5GHz.png  used on input line 91
 .
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-2_m_dB_tt_5GHz.png, id=803, 569.4876pt x 640.3122pt>
+<figures//MSL-2_m_dB_tt_5GHz.png, id=977, 569.4876pt x 640.3122pt>
 File: figures//MSL-2_m_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-2_m_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-2_m_dB_tt_5GHz.png  used on input line 10
-2.
+1.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-2_m_dB_pp_5GHz.png, id=804, 569.4876pt x 641.0349pt>
+<figures//MSL-2_m_dB_pp_5GHz.png, id=978, 569.4876pt x 641.0349pt>
 File: figures//MSL-2_m_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-2_m_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-2_m_dB_pp_5GHz.png  used on input line 10
-6.
+5.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-3_m_dB_tt_5GHz.png, id=805, 569.4876pt x 641.0349pt>
+<figures//MSL-3_m_dB_tt_5GHz.png, id=979, 569.4876pt x 641.0349pt>
 File: figures//MSL-3_m_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-3_m_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-3_m_dB_tt_5GHz.png  used on input line 11
-6.
+5.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-3_m_dB_pp_5GHz.png, id=806, 569.4876pt x 640.3122pt>
+<figures//MSL-3_m_dB_pp_5GHz.png, id=980, 569.4876pt x 640.3122pt>
 File: figures//MSL-3_m_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-3_m_dB_pp_5GHz.png>
-Package pdftex.def Info: figures//MSL-3_m_dB_pp_5GHz.png  used on input line 12
-0.
+Package pdftex.def Info: figures//MSL-3_m_dB_pp_5GHz.png  used on input line 11
+9.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-4_m_dB_tt_5GHz.png, id=807, 569.4876pt x 641.0349pt>
+<figures//MSL-4_m_dB_tt_5GHz.png, id=981, 569.4876pt x 641.0349pt>
 File: figures//MSL-4_m_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-4_m_dB_tt_5GHz.png>
-Package pdftex.def Info: figures//MSL-4_m_dB_tt_5GHz.png  used on input line 13
-0.
+Package pdftex.def Info: figures//MSL-4_m_dB_tt_5GHz.png  used on input line 12
+9.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-4_m_dB_pp_5GHz.png, id=808, 569.4876pt x 640.3122pt>
+<figures//MSL-4_m_dB_pp_5GHz.png, id=982, 569.4876pt x 640.3122pt>
 File: figures//MSL-4_m_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-4_m_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-4_m_dB_pp_5GHz.png  used on input line 13
-4.
+3.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-5_m_dB_tt_5GHz.png, id=809, 569.4876pt x 641.0349pt>
+<figures//MSL-5_m_dB_tt_5GHz.png, id=983, 569.4876pt x 641.0349pt>
 File: figures//MSL-5_m_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-5_m_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-5_m_dB_tt_5GHz.png  used on input line 14
-4.
+3.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-5_m_dB_pp_5GHz.png, id=810, 569.4876pt x 640.3122pt>
+<figures//MSL-5_m_dB_pp_5GHz.png, id=984, 569.4876pt x 640.3122pt>
 File: figures//MSL-5_m_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-5_m_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-5_m_dB_pp_5GHz.png  used on input line 14
-8.
+7.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-1_m_dB_tt.png, id=811, 642.4803pt x 640.3122pt>
+<figures//MSL-1_m_dB_tt.png, id=985, 642.4803pt x 640.3122pt>
 File: figures//MSL-1_m_dB_tt.png Graphic file (type png)
 <use figures//MSL-1_m_dB_tt.png>
-Package pdftex.def Info: figures//MSL-1_m_dB_tt.png  used on input line 158.
+Package pdftex.def Info: figures//MSL-1_m_dB_tt.png  used on input line 157.
 (pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
-<figures//MSL-1_m_dB_pp.png, id=812, 641.7576pt x 640.3122pt>
+<figures//MSL-1_m_dB_pp.png, id=986, 641.7576pt x 640.3122pt>
 File: figures//MSL-1_m_dB_pp.png Graphic file (type png)
 <use figures//MSL-1_m_dB_pp.png>
-Package pdftex.def Info: figures//MSL-1_m_dB_pp.png  used on input line 162.
+Package pdftex.def Info: figures//MSL-1_m_dB_pp.png  used on input line 161.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-2_m_dB_tt.png, id=813, 642.4803pt x 640.3122pt>
+<figures//MSL-2_m_dB_tt.png, id=987, 642.4803pt x 640.3122pt>
 File: figures//MSL-2_m_dB_tt.png Graphic file (type png)
 <use figures//MSL-2_m_dB_tt.png>
-Package pdftex.def Info: figures//MSL-2_m_dB_tt.png  used on input line 172.
+Package pdftex.def Info: figures//MSL-2_m_dB_tt.png  used on input line 171.
 (pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
-<figures//MSL-2_m_dB_pp.png, id=814, 642.4803pt x 640.3122pt>
+<figures//MSL-2_m_dB_pp.png, id=988, 642.4803pt x 640.3122pt>
 File: figures//MSL-2_m_dB_pp.png Graphic file (type png)
 <use figures//MSL-2_m_dB_pp.png>
-Package pdftex.def Info: figures//MSL-2_m_dB_pp.png  used on input line 176.
+Package pdftex.def Info: figures//MSL-2_m_dB_pp.png  used on input line 175.
 (pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
-<figures//MSL-3_m_dB_tt.png, id=815, 641.7576pt x 640.3122pt>
+<figures//MSL-3_m_dB_tt.png, id=989, 641.7576pt x 640.3122pt>
 File: figures//MSL-3_m_dB_tt.png Graphic file (type png)
 <use figures//MSL-3_m_dB_tt.png>
-Package pdftex.def Info: figures//MSL-3_m_dB_tt.png  used on input line 186.
+Package pdftex.def Info: figures//MSL-3_m_dB_tt.png  used on input line 185.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-3_m_dB_pp.png, id=816, 642.4803pt x 640.3122pt>
+<figures//MSL-3_m_dB_pp.png, id=990, 642.4803pt x 640.3122pt>
 File: figures//MSL-3_m_dB_pp.png Graphic file (type png)
 <use figures//MSL-3_m_dB_pp.png>
-Package pdftex.def Info: figures//MSL-3_m_dB_pp.png  used on input line 190.
+Package pdftex.def Info: figures//MSL-3_m_dB_pp.png  used on input line 189.
 (pdftex.def)             Requested size: 173.44865pt x 172.85728pt.
-<figures//MSL-4_m_dB_tt.png, id=817, 641.7576pt x 640.3122pt>
+<figures//MSL-4_m_dB_tt.png, id=991, 641.7576pt x 640.3122pt>
 File: figures//MSL-4_m_dB_tt.png Graphic file (type png)
 <use figures//MSL-4_m_dB_tt.png>
-Package pdftex.def Info: figures//MSL-4_m_dB_tt.png  used on input line 200.
+Package pdftex.def Info: figures//MSL-4_m_dB_tt.png  used on input line 199.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-4_m_dB_pp.png, id=818, 641.7576pt x 640.3122pt>
+<figures//MSL-4_m_dB_pp.png, id=992, 641.7576pt x 640.3122pt>
 File: figures//MSL-4_m_dB_pp.png Graphic file (type png)
 <use figures//MSL-4_m_dB_pp.png>
-Package pdftex.def Info: figures//MSL-4_m_dB_pp.png  used on input line 204.
+Package pdftex.def Info: figures//MSL-4_m_dB_pp.png  used on input line 203.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-5_m_dB_tt.png, id=819, 641.7576pt x 640.3122pt>
+<figures//MSL-5_m_dB_tt.png, id=993, 641.7576pt x 640.3122pt>
 File: figures//MSL-5_m_dB_tt.png Graphic file (type png)
 <use figures//MSL-5_m_dB_tt.png>
-Package pdftex.def Info: figures//MSL-5_m_dB_tt.png  used on input line 214.
+Package pdftex.def Info: figures//MSL-5_m_dB_tt.png  used on input line 213.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-<figures//MSL-5_m_dB_pp.png, id=820, 641.7576pt x 640.3122pt>
+<figures//MSL-5_m_dB_pp.png, id=994, 641.7576pt x 640.3122pt>
 File: figures//MSL-5_m_dB_pp.png Graphic file (type png)
 <use figures//MSL-5_m_dB_pp.png>
-Package pdftex.def Info: figures//MSL-5_m_dB_pp.png  used on input line 218.
+Package pdftex.def Info: figures//MSL-5_m_dB_pp.png  used on input line 217.
 (pdftex.def)             Requested size: 173.44865pt x 173.05269pt.
-[43
+[49
 
  <./figures//MSL-1_m_dB_tt_5GHz.png> <./figures//MSL-1_m_dB_pp_5GHz.png>]
-[44 <./figures//MSL-2_m_dB_tt_5GHz.png> <./figures//MSL-2_m_dB_pp_5GHz.png> <./
-figures//MSL-3_m_dB_tt_5GHz.png> <./figures//MSL-3_m_dB_pp_5GHz.png>] [45 <./fi
+[50 <./figures//MSL-2_m_dB_tt_5GHz.png> <./figures//MSL-2_m_dB_pp_5GHz.png> <./
+figures//MSL-3_m_dB_tt_5GHz.png> <./figures//MSL-3_m_dB_pp_5GHz.png>] [51 <./fi
 gures//MSL-4_m_dB_tt_5GHz.png> <./figures//MSL-4_m_dB_pp_5GHz.png> <./figures//
-MSL-5_m_dB_tt_5GHz.png> <./figures//MSL-5_m_dB_pp_5GHz.png>] [46 <./figures//MS
+MSL-5_m_dB_tt_5GHz.png> <./figures//MSL-5_m_dB_pp_5GHz.png>] [52 <./figures//MS
 L-1_m_dB_tt.png> <./figures//MSL-1_m_dB_pp.png> <./figures//MSL-2_m_dB_tt.png> 
 <./figures//MSL-2_m_dB_pp.png> <./figures//MSL-3_m_dB_tt.png> <./figures//MSL-3
-_m_dB_pp.png>] [47 <./figures//MSL-4_m_dB_tt.png> <./figures//MSL-4_m_dB_pp.png
+_m_dB_pp.png>] [53 <./figures//MSL-4_m_dB_tt.png> <./figures//MSL-4_m_dB_pp.png
 > <./figures//MSL-5_m_dB_tt.png> <./figures//MSL-5_m_dB_pp.png>]
 Appendix D.
-<figures//MSL-1_s_dB_tt_5GHz.png, id=862, 569.4876pt x 641.0349pt>
+<figures//MSL-1_s_dB_tt_5GHz.png, id=1037, 569.4876pt x 641.0349pt>
 File: figures//MSL-1_s_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-1_s_dB_tt_5GHz.png>
-Package pdftex.def Info: figures//MSL-1_s_dB_tt_5GHz.png  used on input line 23
-0.
+Package pdftex.def Info: figures//MSL-1_s_dB_tt_5GHz.png  used on input line 22
+9.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
 File: figures//MSL-1_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-1_s_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-1_s_dB_pp_5GHz.png  used on input line 23
-4.
+3.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-2_s_dB_tt_5GHz.png, id=863, 569.4876pt x 640.3122pt>
+<figures//MSL-2_s_dB_tt_5GHz.png, id=1038, 569.4876pt x 640.3122pt>
 File: figures//MSL-2_s_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-2_s_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-2_s_dB_tt_5GHz.png  used on input line 24
-4.
+3.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-<figures//MSL-2_s_dB_pp_5GHz.png, id=864, 569.4876pt x 641.0349pt>
+<figures//MSL-2_s_dB_pp_5GHz.png, id=1039, 569.4876pt x 641.0349pt>
 File: figures//MSL-2_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-2_s_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-2_s_dB_pp_5GHz.png  used on input line 24
-8.
+7.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-3_s_dB_tt_5GHz.png, id=865, 569.4876pt x 641.0349pt>
+<figures//MSL-3_s_dB_tt_5GHz.png, id=1040, 569.4876pt x 641.0349pt>
 File: figures//MSL-3_s_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-3_s_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-3_s_dB_tt_5GHz.png  used on input line 25
-8.
+7.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-3_s_dB_pp_5GHz.png, id=866, 569.4876pt x 641.0349pt>
+<figures//MSL-3_s_dB_pp_5GHz.png, id=1041, 569.4876pt x 641.0349pt>
 File: figures//MSL-3_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-3_s_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-3_s_dB_pp_5GHz.png  used on input line 26
-2.
+1.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-4_s_dB_tt_5GHz.png, id=867, 569.4876pt x 641.0349pt>
+<figures//MSL-4_s_dB_tt_5GHz.png, id=1042, 569.4876pt x 641.0349pt>
 File: figures//MSL-4_s_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-4_s_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-4_s_dB_tt_5GHz.png  used on input line 27
-2.
+1.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-4_s_dB_pp_5GHz.png, id=868, 569.4876pt x 641.0349pt>
+<figures//MSL-4_s_dB_pp_5GHz.png, id=1043, 569.4876pt x 641.0349pt>
 File: figures//MSL-4_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-4_s_dB_pp_5GHz.png>
 Package pdftex.def Info: figures//MSL-4_s_dB_pp_5GHz.png  used on input line 27
-6.
+5.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-5_s_dB_tt_5GHz.png, id=869, 569.4876pt x 641.0349pt>
+<figures//MSL-5_s_dB_tt_5GHz.png, id=1044, 569.4876pt x 641.0349pt>
 File: figures//MSL-5_s_dB_tt_5GHz.png Graphic file (type png)
 <use figures//MSL-5_s_dB_tt_5GHz.png>
 Package pdftex.def Info: figures//MSL-5_s_dB_tt_5GHz.png  used on input line 28
-6.
+5.
 (pdftex.def)             Requested size: 173.44865pt x 195.23659pt.
-<figures//MSL-5_s_dB_pp_5GHz.png, id=870, 569.4876pt x 640.3122pt>
+<figures//MSL-5_s_dB_pp_5GHz.png, id=1045, 569.4876pt x 640.3122pt>
 File: figures//MSL-5_s_dB_pp_5GHz.png Graphic file (type png)
 <use figures//MSL-5_s_dB_pp_5GHz.png>
-Package pdftex.def Info: figures//MSL-5_s_dB_pp_5GHz.png  used on input line 29
-0.
+Package pdftex.def Info: figures//MSL-5_s_dB_pp_5GHz.png  used on input line 28
+9.
 (pdftex.def)             Requested size: 173.44865pt x 195.01648pt.
-) (./main.bbl [48
+[54
 
- <./figures//MSL-1_s_dB_tt_5GHz.png>] [49 <./figures//MSL-2_s_dB_tt_5GHz.png> <
+ <./figures//MSL-1_s_dB_tt_5GHz.png>] [55 <./figures//MSL-2_s_dB_tt_5GHz.png> <
 ./figures//MSL-2_s_dB_pp_5GHz.png> <./figures//MSL-3_s_dB_tt_5GHz.png> <./figur
-es//MSL-3_s_dB_pp_5GHz.png>] [50 <./figures//MSL-4_s_dB_tt_5GHz.png> <./figures
+es//MSL-3_s_dB_pp_5GHz.png>] [56 <./figures//MSL-4_s_dB_tt_5GHz.png> <./figures
 //MSL-4_s_dB_pp_5GHz.png> <./figures//MSL-5_s_dB_tt_5GHz.png> <./figures//MSL-5
 _s_dB_pp_5GHz.png>]
+Appendix E.
+<figures//Corr_SNR_MSL-1_s_Nfs.png, id=1068, 740.0448pt x 641.0349pt>
+File: figures//Corr_SNR_MSL-1_s_Nfs.png Graphic file (type png)
+<use figures//Corr_SNR_MSL-1_s_Nfs.png>
+Package pdftex.def Info: figures//Corr_SNR_MSL-1_s_Nfs.png  used on input line 
+299.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//Corr_SNR_MSL-2_s_Nfs.png, id=1069, 740.0448pt x 641.0349pt>
+File: figures//Corr_SNR_MSL-2_s_Nfs.png Graphic file (type png)
+<use figures//Corr_SNR_MSL-2_s_Nfs.png>
+Package pdftex.def Info: figures//Corr_SNR_MSL-2_s_Nfs.png  used on input line 
+306.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//Corr_SNR_MSL-3_s_Nfs.png, id=1070, 740.0448pt x 641.0349pt>
+File: figures//Corr_SNR_MSL-3_s_Nfs.png Graphic file (type png)
+<use figures//Corr_SNR_MSL-3_s_Nfs.png>
+Package pdftex.def Info: figures//Corr_SNR_MSL-3_s_Nfs.png  used on input line 
+313.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//Corr_SNR_MSL-4_s_Nfs.png, id=1071, 740.0448pt x 641.0349pt>
+File: figures//Corr_SNR_MSL-4_s_Nfs.png Graphic file (type png)
+<use figures//Corr_SNR_MSL-4_s_Nfs.png>
+Package pdftex.def Info: figures//Corr_SNR_MSL-4_s_Nfs.png  used on input line 
+320.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//Corr_SNR_MSL-5_s_Nfs.png, id=1072, 740.0448pt x 641.0349pt>
+File: figures//Corr_SNR_MSL-5_s_Nfs.png Graphic file (type png)
+<use figures//Corr_SNR_MSL-5_s_Nfs.png>
+Package pdftex.def Info: figures//Corr_SNR_MSL-5_s_Nfs.png  used on input line 
+327.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//vgg-19_sim_Corr_SNR_MSL-1_s_Nfs.png, id=1073, 740.0448pt x 641.0349pt
+>
+File: figures//vgg-19_sim_Corr_SNR_MSL-1_s_Nfs.png Graphic file (type png)
+<use figures//vgg-19_sim_Corr_SNR_MSL-1_s_Nfs.png>
+Package pdftex.def Info: figures//vgg-19_sim_Corr_SNR_MSL-1_s_Nfs.png  used on 
+input line 334.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//vgg-19_sim_Corr_SNR_MSL-2_s_Nfs.png, id=1074, 740.0448pt x 641.0349pt
+>
+File: figures//vgg-19_sim_Corr_SNR_MSL-2_s_Nfs.png Graphic file (type png)
+<use figures//vgg-19_sim_Corr_SNR_MSL-2_s_Nfs.png>
+Package pdftex.def Info: figures//vgg-19_sim_Corr_SNR_MSL-2_s_Nfs.png  used on 
+input line 341.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//vgg-19_sim_Corr_SNR_MSL-3_s_Nfs.png, id=1075, 740.0448pt x 641.0349pt
+>
+File: figures//vgg-19_sim_Corr_SNR_MSL-3_s_Nfs.png Graphic file (type png)
+<use figures//vgg-19_sim_Corr_SNR_MSL-3_s_Nfs.png>
+Package pdftex.def Info: figures//vgg-19_sim_Corr_SNR_MSL-3_s_Nfs.png  used on 
+input line 348.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//vgg-19_sim_Corr_SNR_MSL-4_s_Nfs.png, id=1076, 740.0448pt x 641.0349pt
+>
+File: figures//vgg-19_sim_Corr_SNR_MSL-4_s_Nfs.png Graphic file (type png)
+<use figures//vgg-19_sim_Corr_SNR_MSL-4_s_Nfs.png>
+Package pdftex.def Info: figures//vgg-19_sim_Corr_SNR_MSL-4_s_Nfs.png  used on 
+input line 355.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+<figures//vgg-19_sim_Corr_SNR_MSL-5_s_Nfs.png, id=1077, 740.0448pt x 641.0349pt
+>
+File: figures//vgg-19_sim_Corr_SNR_MSL-5_s_Nfs.png Graphic file (type png)
+<use figures//vgg-19_sim_Corr_SNR_MSL-5_s_Nfs.png>
+Package pdftex.def Info: figures//vgg-19_sim_Corr_SNR_MSL-5_s_Nfs.png  used on 
+input line 362.
+(pdftex.def)             Requested size: 390.25536pt x 338.0449pt.
+[57
+
+ <./figures//Corr_SNR_MSL-1_s_Nfs.png>] [58 <./figures//Corr_SNR_MSL-2_s_Nfs.pn
+g>] [59 <./figures//Corr_SNR_MSL-3_s_Nfs.png>] [60 <./figures//Corr_SNR_MSL-4_s
+_Nfs.png>] [61 <./figures//Corr_SNR_MSL-5_s_Nfs.png>] [62 <./figures//vgg-19_si
+m_Corr_SNR_MSL-1_s_Nfs.png>] [63 <./figures//vgg-19_sim_Corr_SNR_MSL-2_s_Nfs.pn
+g>] [64 <./figures//vgg-19_sim_Corr_SNR_MSL-3_s_Nfs.png>] [65 <./figures//vgg-1
+9_sim_Corr_SNR_MSL-4_s_Nfs.png>] [66 <./figures//vgg-19_sim_Corr_SNR_MSL-5_s_Nf
+s.png>]
+Appendix F.
+<figures//19_1_CM.png, id=1129, 642.4803pt x 640.3122pt>
+File: figures//19_1_CM.png Graphic file (type png)
+<use figures//19_1_CM.png>
+Package pdftex.def Info: figures//19_1_CM.png  used on input line 372.
+(pdftex.def)             Requested size: 390.25536pt x 388.93867pt.
+<figures//19_2_CM.png, id=1130, 642.4803pt x 640.3122pt>
+File: figures//19_2_CM.png Graphic file (type png)
+<use figures//19_2_CM.png>
+Package pdftex.def Info: figures//19_2_CM.png  used on input line 379.
+(pdftex.def)             Requested size: 390.25536pt x 388.93867pt.
+<figures//19_3_CM.png, id=1131, 642.4803pt x 640.3122pt>
+File: figures//19_3_CM.png Graphic file (type png)
+<use figures//19_3_CM.png>
+Package pdftex.def Info: figures//19_3_CM.png  used on input line 386.
+(pdftex.def)             Requested size: 390.25536pt x 388.93867pt.
+<figures//19_4_CM.png, id=1132, 642.4803pt x 640.3122pt>
+File: figures//19_4_CM.png Graphic file (type png)
+<use figures//19_4_CM.png>
+Package pdftex.def Info: figures//19_4_CM.png  used on input line 393.
+(pdftex.def)             Requested size: 390.25536pt x 388.93867pt.
+<figures//19_5_CM.png, id=1133, 642.4803pt x 640.3122pt>
+File: figures//19_5_CM.png Graphic file (type png)
+<use figures//19_5_CM.png>
+Package pdftex.def Info: figures//19_5_CM.png  used on input line 400.
+(pdftex.def)             Requested size: 390.25536pt x 388.93867pt.
+<figures//vgg-19_meas_Angle_ACC_-10.png, id=1134, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_-10.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_-10.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_-10.png  used on input 
+line 409.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_-10.png, id=1135, 992.9898pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_-10.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_-10.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_-10.png  used on input
+ line 413.
+(pdftex.def)             Requested size: 195.12767pt x 134.20146pt.
+<figures//vgg-19_meas_Angle_ACC_-8.png, id=1136, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_-8.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_-8.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_-8.png  used on input l
+ine 423.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_-8.png, id=1137, 992.9898pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_-8.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_-8.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_-8.png  used on input 
+line 427.
+(pdftex.def)             Requested size: 195.12767pt x 134.20146pt.
+<figures//vgg-19_meas_Angle_ACC_-6.png, id=1138, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_-6.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_-6.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_-6.png  used on input l
+ine 437.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_-6.png, id=1139, 992.9898pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_-6.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_-6.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_-6.png  used on input 
+line 441.
+(pdftex.def)             Requested size: 195.12767pt x 134.20146pt.
+<figures//vgg-19_meas_Angle_ACC_-4.png, id=1140, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_-4.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_-4.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_-4.png  used on input l
+ine 451.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_-4.png, id=1141, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_-4.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_-4.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_-4.png  used on input 
+line 455.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_-2.png, id=1142, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_-2.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_-2.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_-2.png  used on input l
+ine 465.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_-2.png, id=1143, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_-2.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_-2.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_-2.png  used on input 
+line 469.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_0.png, id=1144, 1018.2843pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_0.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_0.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_0.png  used on input li
+ne 479.
+(pdftex.def)             Requested size: 195.12767pt x 130.86674pt.
+<figures//vgg-19_meas_Pred_Angle_0.png, id=1145, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_0.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_0.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_0.png  used on input l
+ine 483.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_3.png, id=1146, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_3.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_3.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_3.png  used on input li
+ne 493.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_3.png, id=1147, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_3.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_3.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_3.png  used on input l
+ine 497.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_5.png, id=1148, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_5.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_5.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_5.png  used on input li
+ne 507.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_5.png, id=1149, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_5.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_5.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_5.png  used on input l
+ine 511.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_7.png, id=1150, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_7.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_7.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_7.png  used on input li
+ne 521.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_7.png, id=1151, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_7.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_7.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_7.png  used on input l
+ine 525.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_9.png, id=1152, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_9.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_9.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_9.png  used on input li
+ne 535.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_9.png, id=1153, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_9.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_9.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_9.png  used on input l
+ine 539.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_11.png, id=1154, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_11.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_11.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_11.png  used on input l
+ine 549.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_11.png, id=1155, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_11.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_11.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_11.png  used on input 
+line 553.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_13.png, id=1156, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_13.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_13.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_13.png  used on input l
+ine 563.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_13.png, id=1157, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_13.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_13.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_13.png  used on input 
+line 567.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_15.png, id=1158, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_15.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_15.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_15.png  used on input l
+ine 577.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_15.png, id=1159, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_15.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_15.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_15.png  used on input 
+line 581.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_18.png, id=1160, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_18.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_18.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_18.png  used on input l
+ine 591.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_18.png, id=1161, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_18.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_18.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_18.png  used on input 
+line 595.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+<figures//vgg-19_meas_Angle_ACC_20.png, id=1162, 1026.9567pt x 682.9515pt>
+File: figures//vgg-19_meas_Angle_ACC_20.png Graphic file (type png)
+<use figures//vgg-19_meas_Angle_ACC_20.png>
+Package pdftex.def Info: figures//vgg-19_meas_Angle_ACC_20.png  used on input l
+ine 605.
+(pdftex.def)             Requested size: 195.12767pt x 129.76213pt.
+<figures//vgg-19_meas_Pred_Angle_20.png, id=1163, 1008.8892pt x 682.9515pt>
+File: figures//vgg-19_meas_Pred_Angle_20.png Graphic file (type png)
+<use figures//vgg-19_meas_Pred_Angle_20.png>
+Package pdftex.def Info: figures//vgg-19_meas_Pred_Angle_20.png  used on input 
+line 609.
+(pdftex.def)             Requested size: 195.12767pt x 132.08601pt.
+[67
+
+ <./figures//19_1_CM.png>] [68 <./figures//19_2_CM.png>] [69 <./figures//19_3_C
+M.png>] [70 <./figures//19_4_CM.png>] [71 <./figures//19_5_CM.png> <./figures//
+vgg-19_meas_Angle_ACC_-10.png> <./figures//vgg-19_meas_Pred_Angle_-10.png>]
+[72 <./figures//vgg-19_meas_Angle_ACC_-8.png> <./figures//vgg-19_meas_Pred_Angl
+e_-8.png> <./figures//vgg-19_meas_Angle_ACC_-6.png> <./figures//vgg-19_meas_Pre
+d_Angle_-6.png> <./figures//vgg-19_meas_Angle_ACC_-4.png> <./figures//vgg-19_me
+as_Pred_Angle_-4.png>] [73 <./figures//vgg-19_meas_Angle_ACC_-2.png> <./figures
+//vgg-19_meas_Pred_Angle_-2.png> <./figures//vgg-19_meas_Angle_ACC_0.png> <./fi
+gures//vgg-19_meas_Pred_Angle_0.png> <./figures//vgg-19_meas_Angle_ACC_3.png> <
+./figures//vgg-19_meas_Pred_Angle_3.png>] [74 <./figures//vgg-19_meas_Angle_ACC
+_5.png> <./figures//vgg-19_meas_Pred_Angle_5.png> <./figures//vgg-19_meas_Angle
+_ACC_7.png> <./figures//vgg-19_meas_Pred_Angle_7.png> <./figures//vgg-19_meas_A
+ngle_ACC_9.png> <./figures//vgg-19_meas_Pred_Angle_9.png>] [75 <./figures//vgg-
+19_meas_Angle_ACC_11.png> <./figures//vgg-19_meas_Pred_Angle_11.png> <./figures
+//vgg-19_meas_Angle_ACC_13.png> <./figures//vgg-19_meas_Pred_Angle_13.png> <./f
+igures//vgg-19_meas_Angle_ACC_15.png> <./figures//vgg-19_meas_Pred_Angle_15.png
+>] [76 <./figures//vgg-19_meas_Angle_ACC_18.png> <./figures//vgg-19_meas_Pred_A
+ngle_18.png> <./figures//vgg-19_meas_Angle_ACC_20.png> <./figures//vgg-19_meas_
+Pred_Angle_20.png>]
+Appendix G.
+) (./main.bbl [77
+
+] [78]
 Underfull \hbox (badness 10000) in paragraph at lines 4--10
 \OT1/cmtt/m/n/12 News / Releases / Release / Article / 2397850 / electromagneti
 c -[] spectrum -[]
  []
 
-[51
+[79
 
-] [52])
+] [80])
 Using TeX to sort glossary entries---this may take a while
-[53] [54
+[81] [82
 
 
 ] (./myThesis/SF298.tex
@@ -1379,13 +1713,13 @@ l.50 \MakeRptDocPage
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: D96499405639AC275C7C8856EAB307DD;6871.
+(rerunfilecheck)             Checksum: 578FF32830C31FC97CF30B957C9CF7A2;7607.
  ) 
 Here is how much of TeX's memory you used:
- 27047 strings out of 478300
- 503220 string characters out of 5849123
- 818461 words of memory out of 5000000
- 44508 multiletter control sequences out of 15000+600000
+ 27619 strings out of 478300
+ 520908 string characters out of 5849123
+ 824338 words of memory out of 5000000
+ 44959 multiletter control sequences out of 15000+600000
  485488 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  96i,11n,131p,1721b,931s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -1410,10 +1744,10 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2022/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2022/texmf-dist/fonts/typ
 e1/public/amsfonts/cm/cmtt12.pfb><c:/texlive/2022/texmf-dist/fonts/type1/public
 /cm-super/sfrm1200.pfb>
-Output written on main.pdf (65 pages, 7868865 bytes).
+Output written on main.pdf (95 pages, 11116404 bytes).
 PDF statistics:
- 1094 PDF objects out of 1200 (max. 8388607)
- 873 compressed objects within 9 object streams
- 231 named destinations out of 1000 (max. 500000)
- 643 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1468 PDF objects out of 1728 (max. 8388607)
+ 1118 compressed objects within 12 object streams
+ 304 named destinations out of 1000 (max. 500000)
+ 939 words of extra memory for PDF output out of 10000 (max. 10000000)
 

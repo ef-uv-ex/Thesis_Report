@@ -25,7 +25,7 @@ E.~G. Bowen.
 \newblock Intitute of Phsyics Publishing, 1987.
 
 \bibitem{POMR_Range_eq}
-Holm W.~A. Richards M.~A., Scheer J.~A.
+M.~A. Richards, J.~A. Scheer, and W.~A. Holm.
 \newblock {\em Noise}, pages 61--65.
 \newblock Scitech Publishing, Edison, NJ, 2010.
 
@@ -35,7 +35,7 @@ Eugene Knott.
 \newblock Scitech Publishing, Raleigh, NC, 2004.
 
 \bibitem{POMR_Noise}
-Holm W.~A. Richards M.~A., Scheer J.~A.
+M.~A. Richards, J.~A. Scheer, and W.~A. Holm.
 \newblock {\em Noise}, pages 64--66.
 \newblock Scitech Publishing, Edison, NJ, 2010.
 
@@ -83,7 +83,7 @@ Aurelien.
 \newblock O'Reilly Media, 2019.
 
 \bibitem{BP}
-R.~J.~Williams D.~E.~Rumelhart, G. E.~Hinton.
+D.~E. Rumelhart, G.~E. Hinton, and R.~J. Williams.
 \newblock Learning internal representation by error propogation, 1986.
 
 \bibitem{VGG-19}
@@ -125,7 +125,7 @@ M.~A. Dennis.
 \newblock (Accessed: 9 Sept 2022).
 
 \bibitem{Brooks2}
-Binford T.~O. Brooks R.~A., Creiner~R.
+R.~A. Brooks, R.~Creiner, and T.~O. Binford.
 \newblock International joint conference of artificial intelligence.
 \newblock In {\em Proceesings of the International Joint Conference of
   Artificial Intelligence}, pages 105--113, New York, NY, 1979. ACM.
